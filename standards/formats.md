@@ -1,40 +1,37 @@
-# Data Format Standard
+# Data and Output Format Standard
 
-## Canonical format
+## Canonical source
 
-JSON is the canonical interchange representation.
+JSON is the canonical machine-readable source of truth.
 
-It is used for:
+## Derived formats
 
-- validation;
-- APIs;
-- programmatic processing;
-- storage interchange;
-- schema tooling;
-- import/export.
+- TOON: compact LLM context representation.
+- Markdown: human-readable documentation.
+- YAML: configuration/interchange when required.
+- HTML: browser presentation.
+- PDF: archival/presentation output.
+- DOCX: editable professional document.
 
-## TOON
+No derived format is independently maintained.
 
-TOON is a derived LLM representation.
+## Conversion rule
 
-Pipeline:
+JSON -> TOON/Markdown/YAML/HTML/PDF/DOCX
 
-```
-Canonical JSON
-    ↓
-TOON encoder
-    ↓
-LLM context
-```
+A conversion must preserve IDs, roles, names, specialties, duties, decisions, actions, risks, evidence and provenance.
 
-The reverse direction is supported only when a consumer needs to decode TOON back into the JSON data model.
+## TOON policy
 
-TOON must follow the current compatible TOON specification. Because the TOON specification is still a working draft, the repository must record the supported specification version in its compatibility manifest.
+TOON is an optimization layer for model context, not a database format. The repository follows `standards/toon-compatibility.json`.
 
-## Markdown
+If a consumer cannot reliably parse TOON, send canonical JSON.
 
-Markdown is for human documentation, guides, explanations and examples.
+## Localization
 
-## YAML
+Canonical IDs remain language-neutral. Presentation language is selected separately. Persian is supported without changing IDs.
 
-YAML is not a canonical data format for this project. It may be used for configuration when a tool requires it, but semantic taxonomy data must remain JSON-based.
+## Professional documents
+
+Every meeting output declares: draft, reviewed, approved, or amended.
+An approved document is never silently overwritten.
