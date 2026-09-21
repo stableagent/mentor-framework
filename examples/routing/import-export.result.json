@@ -1,0 +1,18 @@
+{
+  "request_id":"route-import-export-001","routing_status":"approval-required","lead_role":"lead-startup-advisor","lead_person_id":"mojgan",
+  "members":[
+    {"role_id":"import-export-mentor","person_id":"tahmineh","status":"proposed","reason":"Import procedure, customs documentation and trade finance are required."},
+    {"role_id":"supply-chain-mentor","person_id":null,"status":"proposed","reason":"Landed cost and logistics dependencies require supply-chain analysis."},
+    {"role_id":"legal-compliance-mentor","person_id":null,"status":"proposed","reason":"The high-risk jurisdiction-specific trade context may require compliance review."}
+  ],
+  "required_skills":["import-procedure","customs-documentation","landed-cost","trade-finance"],
+  "coverage":[
+    {"skill_id":"import-procedure","status":"covered","covered_by_role_ids":["import-export-mentor"]},
+    {"skill_id":"customs-documentation","status":"covered","covered_by_role_ids":["import-export-mentor"]},
+    {"skill_id":"landed-cost","status":"partially-covered","covered_by_role_ids":["supply-chain-mentor"]},
+    {"skill_id":"trade-finance","status":"covered","covered_by_role_ids":["import-export-mentor"]}
+  ],
+  "rationale":["Import/export is a regulated and jurisdiction-sensitive domain.","No specialist was pre-approved, so activation requires user approval.","Current authoritative trade and customs sources must be verified before operational advice is finalized."],
+  "missing_skills":[],"escalations":[{"type":"regulated","reason":"Jurisdiction-specific import and customs requirements require current authoritative verification.","target":"qualified-external-review"}],
+  "approval":{"status":"pending-user","required":true},"taxonomy_version":"1.0.0","routing_rule_version":"1.0.0"
+}
