@@ -50,13 +50,14 @@ Additional domain-specific files may be loaded after request normalization.
 The consumer should establish:
 
 - nahid is strategic oversight.
-- armin is session manager.
-- mojgan is lead startup advisor.
-- saeed is session secretary.
+- saeed is the fixed session manager (Persian: سعید; English: Steeve).
+- mojgan is the fixed lead startup advisor (Persian: مژگان; English: Mojgan).
+- session recording is a system function and has no fixed person identity.
 - the user retains final decision authority.
 - capability selection precedes person selection.
 - regulated or high-risk matters preserve external-review requirements.
 - no global mentor ranking is permitted.
+- fixed identities and fixed duties must not be reassigned during a session.
 - canonical JSON is authoritative.
 - TOON is a derived context representation.
 
