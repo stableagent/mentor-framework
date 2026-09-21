@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/localization.schema.json",
+  "title":"Mentor Skills Localization",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["entity_id","language","status","name","description"],
+  "properties":{
+    "entity_id":{"type":"string"},
+    "language":{"type":"string","pattern":"^[a-z]{2}$"},
+    "status":{"enum":["draft","machine-translated","human-reviewed","verified"]},
+    "name":{"type":"string"},
+    "description":{"type":"string"},
+    "aliases":{"type":"array","items":{"type":"string"}},
+    "notes":{"type":"string"},
+    "source":{"type":"string"},
+    "reviewed_at":{"type":"string"}
+  }
+}
