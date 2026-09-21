@@ -30,7 +30,7 @@ The intended user experience is:
             ↓
     Advisory model
             ↓
-    Mojgan synthesis + Nahid oversight + Saeed record
+    Mojgan synthesis + Nahid oversight + session recording
             ↓
     Human decision
 
@@ -199,7 +199,7 @@ At minimum, the context package should preserve:
 - Nahid strategic oversight
 - Saeed session management
 - Mojgan advisory synthesis
-- Saeed session record responsibility
+- session recording responsibility
 - domain-scoped specialist authority
 - escalation requirements
 - external professional review requirements where applicable
