@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/mentor-role.schema.json",
+  "title":"Mentor Role",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","type","name","status","skill_ids","responsibilities","routing_signals"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "type":{"const":"mentor-role"},
+    "name":{"type":"string"},
+    "status":{"enum":["draft","active","deprecated"]},
+    "skill_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "responsibilities":{"type":"array","items":{"type":"string"}},
+    "routing_signals":{"type":"array","items":{"type":"string"}},
+    "escalation_skill_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true}
+  }
+}
