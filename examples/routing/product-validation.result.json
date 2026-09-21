@@ -1,0 +1,17 @@
+{
+  "request_id":"route-product-validation-001","routing_status":"approval-required","lead_role":"lead-startup-advisor","lead_person_id":"mojgan",
+  "members":[
+    {"role_id":"market-research-mentor","person_id":"parnia","status":"proposed","reason":"Problem validation and customer interviews are required."},
+    {"role_id":"product-mentor","person_id":"taraneh","status":"proposed","reason":"Product discovery is required."},
+    {"role_id":"ux-mentor","person_id":null,"status":"proposed","reason":"UX research is explicitly required."}
+  ],
+  "required_skills":["problem-validation","customer-interviews","product-discovery","ux-research"],
+  "coverage":[
+    {"skill_id":"problem-validation","status":"covered","covered_by_role_ids":["market-research-mentor"]},
+    {"skill_id":"customer-interviews","status":"covered","covered_by_role_ids":["market-research-mentor"]},
+    {"skill_id":"product-discovery","status":"covered","covered_by_role_ids":["product-mentor"]},
+    {"skill_id":"ux-research","status":"covered","covered_by_role_ids":["ux-mentor"]}
+  ],
+  "rationale":["The request is a validation-stage product problem.","Market research and product roles cover the discovery capabilities; UX research is added because it is explicit.","No specialist was pre-approved, so activation requires user approval."],
+  "missing_skills":[],"escalations":[],"approval":{"status":"pending-user","required":true},"taxonomy_version":"1.0.0","routing_rule_version":"1.0.0"
+}
