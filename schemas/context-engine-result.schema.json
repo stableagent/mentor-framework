@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-framework/blob/main/schemas/context-engine-result.schema.json",
+  "title": "Mentor Framework Context Engine Result",
+  "type": "object",
+  "required": ["selection", "context_package"],
+  "properties": {
+    "selection": {"$ref": "context-selection-result.schema.json"},
+    "context_package": {"$ref": "context-package.schema.json"},
+    "projection": {
+      "type": "object",
+      "required": ["format", "content"],
+      "properties": {
+        "format": {"enum": ["json", "toon", "markdown"]},
+        "content": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
