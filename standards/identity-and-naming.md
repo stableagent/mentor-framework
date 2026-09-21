@@ -14,26 +14,32 @@ Permanent system persona: Persian name ناهید, English name Nahid, stable ID
 
 The Session Manager is a fixed system persona and must never be conflated with the registered user's identity.
 
-## 4. Mentor naming
+## 4. Session Secretary
+
+Permanent system persona: Persian name سعید, English name Saeed, stable ID saeed, role session-secretary.
+
+The Session Secretary is a fixed system persona and must never be conflated with the registered user's identity. The names ناهید / Nahid and سعید / Saeed are immutable system-persona names and must not be replaced by translated or alternate personal names in any language or format.
+
+## 5. Mentor naming
 
 Default mentor personas use Persian female given names. Mentors are referenced by given name only. No surname should be generated or appended unless an external human participant explicitly has one.
 
-## 5. Fixed expertise and duty
+## 6. Fixed expertise and duty
 
 When a mentor appears anywhere in the meeting record, the system resolves the mentor ID against taxonomy/people.json. The model must not change a mentor's specialty, role, or duty because the topic changes.
 
-## 6. Display rule
+## 7. Display rule
 
 Every participant reference should resolve to given name plus fixed role/specialty context. Example: پارمیس — متخصص مالی و حسابداری.
 
-## 7. Persistence
+## 8. Persistence
 
 Names and semantic identities are stored by stable IDs, not only display strings. Recommended chain: participant_id -> person.id -> role_id -> specialty_ids -> fixed_duty.
 
-## 8. Conflict rule
+## 9. Conflict rule
 
 If a model-generated statement conflicts with the canonical registry, the registry wins. Permanent identity changes require a configuration workflow.
 
-## 9. Localization
+## 10. Localization
 
 Canonical IDs remain language-neutral. Localized names and descriptions may be added without changing stable IDs.
