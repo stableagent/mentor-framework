@@ -6,7 +6,7 @@ Mentor Framework is now specification-first. The repository itself remains techn
 
 Completed:
 
-- taxonomy and domain registry
+- taxonomy, domain, advisory-role and skill registries
 - mentor roles and people registry
 - fixed coordination hierarchy
 - authority matrix
