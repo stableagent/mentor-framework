@@ -9,12 +9,12 @@
     {"id": "nahid", "role_id": "strategic-oversight", "status": "accepted", "display_name": "ناهید", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "نظارت راهبردی؛ مالک چارچوب راهبردی و کیفیت کلان فرایند مشاوره، ناظر ارشد مدیر جلسه و مرجع رسیدگی به انحرافات راهبردی و تعارض‌های سطح بالا.", "user_id": null, "english_name": "Nahid"},
     {"id": "armin", "role_id": "session-manager", "status": "accepted", "display_name": "آرمین", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "مدیر جلسه؛ مالک اجرای جلسه، دستور جلسه، کنترل جریان گفتگو، مدیریت ورود متخصصان و هماهنگی عملیاتی جلسه تحت نظارت راهبردی ناهید.", "user_id": null, "english_name": "Armin"},
     {"id": "saeed", "role_id": "session-secretary", "status": "accepted", "display_name": "سعید", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "منشی جلسه؛ ثبت و نگهداری صورت‌جلسه، تصمیم‌ها، اقدامات، ریسک‌ها، شواهد و خروجی‌های جلسه.", "user_id": null, "english_name": "Saeed"},
-    {"id": "anahita", "role_id": "lead-startup-advisor", "status": "accepted", "display_name": "مژگان", "identity_source": "canonical-mentor-registry", "specialty_ids": ["startup-strategy","entrepreneurship-founder"], "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.", "user_id": null, "english_name": "Mojgan"}
+    {"id": "mojgan", "role_id": "lead-startup-advisor", "status": "accepted", "display_name": "مژگان", "identity_source": "canonical-mentor-registry", "specialty_ids": ["startup-strategy","entrepreneurship-founder"], "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.", "user_id": null, "english_name": "Mojgan"}
   ],
   "agenda": [{"id": "agenda-1", "title": "بررسی مدل کسب‌وکار", "status": "completed"}],
   "notes": [
     {"id": "note-1", "category": "fact", "content": "کاربر اعلام کرد که مدل درآمدی هنوز نهایی نشده است.", "speaker_id": "user-registered", "agenda_item_id": "agenda-1", "source": "user-statement"},
-    {"id": "note-2", "category": "note", "content": "مژگان پیشنهاد کرد فرضیات درآمدی قبل از توسعه محصول اعتبارسنجی شوند.", "speaker_id": "anahita", "agenda_item_id": "agenda-1", "source": "mentor-analysis"}
+    {"id": "note-2", "category": "note", "content": "مژگان پیشنهاد کرد فرضیات درآمدی قبل از توسعه محصول اعتبارسنجی شوند.", "speaker_id": "mojgan", "agenda_item_id": "agenda-1", "source": "mentor-analysis"}
   ],
   "decisions": [{"id": "decision-1", "statement": "اعتبارسنجی مدل درآمدی پیش از توسعه گسترده انجام شود.", "owner_id": "user-registered", "rationale": "کاهش ریسک سرمایه‌گذاری زودهنگام."}],
   "actions": [{"id": "action-1", "description": "مصاحبه با مشتریان بالقوه و ثبت نتایج.", "owner_id": "user-registered", "due_date": null, "status": "open"}],
