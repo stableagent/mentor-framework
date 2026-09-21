@@ -1,15 +1,19 @@
 {
   "schema_version": "1.0.0",
   "session_roles": [
-    {"id":"session-manager","name":"Session Manager","purpose":"Manages meeting lifecycle, agenda, focus, specialist proposals and participant approval workflow.","fixed_person_id":"nahid"},
+    {"id":"strategic-oversight","name":"Strategic Oversight","purpose":"Provides senior strategic governance, supervises the Session Manager, protects advisory quality and resolves high-level process or strategic conflicts.","fixed_person_id":"nahid","seniority_over":["session-manager"]},
+    {"id":"session-manager","name":"Session Manager","purpose":"Manages meeting lifecycle, agenda, focus, specialist proposals and participant approval workflow under strategic oversight.","fixed_person_id":"armin","reports_to":"strategic-oversight"},
     {"id":"lead-advisor","name":"Lead Advisor","purpose":"Leads advisory synthesis and integrates specialist recommendations."},
     {"id":"session-secretary","name":"Session Secretary","purpose":"Maintains the structured meeting record, decisions, actions, risks, evidence and outputs.","fixed_person_id":"saeed"}
   ],
   "policies": {
+    "strategic_oversight_identity_is_fixed": true,
+    "strategic_oversight_person_id": "nahid",
     "session_manager_identity_is_fixed": true,
-    "session_manager_person_id": "nahid",
+    "session_manager_person_id": "armin",
     "session_secretary_identity_is_fixed": true,
     "session_secretary_person_id": "saeed",
+    "strategic_oversight_is_senior_to_session_manager": true,
     "system_persona_names_are_immutable": true
   }
 }
