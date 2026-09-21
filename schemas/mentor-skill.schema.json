@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-skills/blob/main/schemas/mentor-skill.schema.json",
+  "title": "Mentor Skill",
+  "description": "Canonical structure for a startup mentor skill domain.",
+  "type": "object",
+  "required": ["id", "name", "definition", "sub_skills", "frameworks", "methods", "questions", "deliverables", "kpis", "tools", "red_flags", "common_mistakes", "decision_criteria", "escalation_rules"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "definition": {"type": "string"},
+    "sub_skills": {"type": "array", "items": {"type": "string"}},
+    "frameworks": {"type": "array", "items": {"type": "string"}},
+    "methods": {"type": "array", "items": {"type": "string"}},
+    "questions": {"type": "array", "items": {"type": "string"}},
+    "deliverables": {"type": "array", "items": {"type": "string"}},
+    "kpis": {"type": "array", "items": {"type": "string"}},
+    "tools": {"type": "array", "items": {"type": "string"}},
+    "red_flags": {"type": "array", "items": {"type": "string"}},
+    "common_mistakes": {"type": "array", "items": {"type": "string"}},
+    "decision_criteria": {"type": "array", "items": {"type": "string"}},
+    "escalation_rules": {"type": "array", "items": {"type": "string"}}
+  }
+}
