@@ -33,20 +33,25 @@ mentor-framework/
 1. **AI-independent:** the framework does not depend on a particular model provider or native skill system.
 2. **Canonical JSON:** JSON is the source-of-truth interchange representation.
 3. **TOON as a projection:** TOON is generated from canonical JSON for LLM context where its compact representation is useful. TOON is not maintained as a second source of truth.
-4. **Stable identifiers:** semantic IDs are language-neutral and stable across translations.
-5. **Localization is separate:** language changes do not create new skills, roles or domains.
-6. **Role/skill separation:** a mentor role is a professional responsibility; a skill is a capability; a competency describes proficiency; a framework is a reusable method.
-7. **Context-aware advisory:** mentor selection can depend on user role, organization type, stage, problem and required skills.
-8. **Multi-mentor collaboration:** the framework can compose an advisory team and use a Lead Advisor to synthesize specialist perspectives.
-9. **Evidence discipline:** facts, assumptions, estimates, hypotheses and opinions must remain distinguishable.
-10. **Escalation:** regulated or high-risk matters require appropriate qualified professionals and current jurisdiction-specific verification.
-11. **Human decision authority:** mentors and chatbot consumers advise, organize and document; authorized humans make business decisions.
+4. **Token-efficient context:** consumers should send the minimum sufficient framework context rather than the entire knowledge base.
+5. **Stable identifiers:** semantic IDs are language-neutral and stable across translations.
+6. **Localization is separate:** language changes do not create new skills, roles or domains.
+7. **Role/skill separation:** a mentor role is a professional responsibility; a skill is a capability; a competency describes proficiency; a framework is a reusable method.
+8. **Context-aware advisory:** mentor selection can depend on user role, organization type, stage, problem and required skills.
+9. **Multi-mentor collaboration:** the framework can compose an advisory team and use a Lead Advisor to synthesize specialist perspectives.
+10. **Evidence discipline:** facts, assumptions, estimates, hypotheses and opinions must remain distinguishable.
+11. **Escalation:** regulated or high-risk matters require appropriate qualified professionals and current jurisdiction-specific verification.
+12. **Human decision authority:** mentors and chatbot consumers advise, organize and document; authorized humans make business decisions.
 
 ## Formats
 
-JSON is used for validation, storage interchange and programmatic processing.
+JSON is the canonical representation for validation, storage interchange and programmatic processing.
 
-TOON follows the current TOON specification and is intended primarily as a compact representation for LLM prompts and context. The current TOON specification is a working draft, so this repository pins its compatibility policy rather than treating TOON as the canonical storage format.
+TOON is the preferred LLM-facing projection when it provides a smaller or otherwise more efficient representation for the relevant structured data. It is especially useful for repeated, uniform records such as skills, roles, mentor registries, routing tables and team definitions. Compact JSON remains acceptable when it is smaller or operationally safer for a particular payload.
+
+The current published TOON specification is v4.1 (2026-07-25), a stable working draft. This repository treats TOON as a version-pinned projection, not as a second source of truth.
+
+See standards/format-and-token-efficiency.md.
 
 Markdown is used for human-facing documentation.
 
@@ -54,13 +59,13 @@ Markdown is used for human-facing documentation.
 
 Language-only ISO 639-1 codes are used initially:
 
-`en, fa, de, fr, ar, tr, ur, zh, es, pt, ru, ja, ko, hi, it, id, nl, pl, uk, vi, th, he, sv, no, da, fi, cs, ro, el, hu`
+en, fa, de, fr, ar, tr, ur, zh, es, pt, ru, ja, ko, hi, it, id, nl, pl, uk, vi, th, he, sv, no, da, fi, cs, ro, el, hu
 
 Additional languages can be added without changing the core framework.
 
 ## Mentor Routing Framework
 
-The **Mentor Routing Framework** is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker. See `standards/mentor-routing-framework.md`.
+The **Mentor Routing Framework** is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker. See standards/mentor-routing-framework.md.
 
 ## Chatbot Consumption Model
 
@@ -71,6 +76,8 @@ A consumer should:
 - normalize the user's advisory need;
 - determine required capabilities before selecting people;
 - propose the smallest adequate advisory team;
+- load only the minimum sufficient framework context;
+- prefer TOON for token-efficient repeated structured data when beneficial;
 - distinguish the fixed coordination layer from domain specialists;
 - identify missing skills and escalation conditions;
 - preserve human decision authority;
@@ -79,8 +86,9 @@ A consumer should:
 
 See:
 
-- `standards/chatbot-consumption-model.md`
-- `schemas/chatbot-consumption.schema.json`
+- standards/chatbot-consumption-model.md
+- schemas/chatbot-consumption.schema.json
+- standards/format-and-token-efficiency.md
 
 The same framework can therefore serve multiple chatbot providers without creating provider-specific versions of the framework.
 
@@ -97,7 +105,7 @@ When a user explicitly asks for the author/maintainer, project ownership, reposi
 - **Website:** https://www.esmailzaee.ir/
 - **Repository:** https://github.com/stableagent/mentor-framework
 
-Machine-readable maintainer metadata is stored in `metadata/maintainer.json`.
+Machine-readable maintainer metadata is stored in metadata/maintainer.json.
 
 This profile is displayed on request; the framework should not infer or disclose additional personal information beyond the published profile metadata.
 
@@ -125,4 +133,4 @@ This repository is a knowledge, capability and advisory-governance reference. It
 
 The taxonomy, schemas and generated representations are versioned independently where appropriate. Breaking changes to identifiers or entity contracts require a major version.
 
-See `standards/` for the normative project rules.
+See standards/ for the normative project rules.
