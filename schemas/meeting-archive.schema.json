@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/meeting-archive.schema.json",
+  "title":"Meeting Archive",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["meeting_id","archive_status","canonical_record_reference","final_minutes_reference","approved_by"],
+  "properties":{
+    "meeting_id":{"type":"string"},
+    "archive_status":{"enum":["archive-proposed","user-confirmed","archived","amended"]},
+    "canonical_record_reference":{"type":"string"},
+    "final_minutes_reference":{"type":"string"},
+    "approved_by":{"type":["string","null"]},
+    "archived_at":{"type":["string","null"],"format":"date-time"},
+    "historical_reference_ids":{"type":"array","items":{"type":"string"}},
+    "retrieval_tags":{"type":"array","items":{"type":"string"}},
+    "amendment_history_reference":{"type":["string","null"]}
+  }
+}
