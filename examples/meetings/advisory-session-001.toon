@@ -1,0 +1,7 @@
+meeting[1]{id,type,status,title}: advisory-session-001,advisory-meeting,approved,نمونه جلسه مشاوره استارتاپ
+identity_policy[1]{given_name_only,mentor_identity_locked,user_identity_source}: true,true,ai_registration_identity
+participants[1]{id,display_name,identity_source,role_id}: user-registered,REGISTERED_USER,registered-user-identity,founder-mentor
+participants[1]{id,display_name,identity_source,role_id}: steeve,سعید,system-persona,session-manager
+participants[1]{id,display_name,identity_source,role_id}: anahita,آناهیتا,canonical-mentor-registry,lead-startup-advisor
+decision[1]{id,owner_id,statement}: decision-1,user-registered,اعتبارسنجی مدل درآمدی پیش از توسعه گسترده انجام شود.
+action[1]{id,status,owner_id,description}: action-1,open,user-registered,مصاحبه با مشتریان بالقوه و ثبت نتایج.
