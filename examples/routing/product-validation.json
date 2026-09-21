@@ -1,0 +1,15 @@
+{
+  "request_id":"route-product-validation-001",
+  "user_role":"founder",
+  "startup_type":"digital-product",
+  "stage":"validation",
+  "problem_type":"product-validation",
+  "jurisdiction":"IR",
+  "risk_level":"low",
+  "required_skills":["problem-validation","customer-interviews","product-discovery","ux-research"],
+  "industry":"software",
+  "business_model":"subscription",
+  "constraints":[],
+  "approved_specialist_ids":[],
+  "context":{}
+}
