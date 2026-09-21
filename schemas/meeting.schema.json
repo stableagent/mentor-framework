@@ -1,6 +1,6 @@
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/meeting.schema.json",
+  "$id":"https://github.com/stableagent/mentor-framework/blob/main/schemas/meeting.schema.json",
   "title":"Mentor Advisory Meeting","type":"object","additionalProperties":false,
   "required":["id","type","status","title","participants","agenda","notes","decisions","actions","risks","open_questions","specialist_proposals","outputs","identity_policy"],
   "properties":{
@@ -12,7 +12,7 @@
     "actions":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","description"],"properties":{"id":{"type":"string"},"description":{"type":"string"},"owner_id":{"type":["string","null"]},"due_date":{"type":["string","null"]},"status":{"enum":["open","done","cancelled"]}}}},
     "risks":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","description"],"properties":{"id":{"type":"string"},"description":{"type":"string"},"severity":{"enum":["low","medium","high","critical"]}}}},
     "open_questions":{"type":"array","items":{"type":"string"}},"specialist_proposals":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["role_id","reason","status"],"properties":{"role_id":{"type":"string"},"reason":{"type":"string"},"status":{"enum":["proposed","accepted","declined","expired"]}}}},
-    "identity_policy":{"type":"object","additionalProperties":false,"required":["given_name_only","mentor_identity_locked","user_identity_source","fixed_strategic_oversight_id","fixed_session_manager_id","fixed_lead_startup_advisor_id","fixed_session_secretary_id"],"properties":{"given_name_only":{"type":"boolean"},"mentor_identity_locked":{"type":"boolean"},"user_identity_source":{"const":"ai_registration_identity"},"fixed_strategic_oversight_id":{"const":"nahid"},"fixed_session_manager_id":{"const":"armin"},"fixed_lead_startup_advisor_id":{"const":"mojgan"},"fixed_session_secretary_id":{"const":"saeed"}}},
+    "identity_policy":{"type":"object","additionalProperties":false,"required":["given_name_only","mentor_identity_locked","user_identity_source","fixed_strategic_oversight_id","fixed_session_manager_id","fixed_lead_startup_advisor_id","fixed_session_secretary_id"],"properties":{"given_name_only":{"type":"boolean"},"mentor_identity_locked":{"type":"boolean"},"user_identity_source":{"const":"ai_registration_identity"},"fixed_strategic_oversight_id":{"const":"nahid"},"fixed_session_manager_id":{"const":"saeed"},"fixed_lead_startup_advisor_id":{"const":"mojgan"},"fixed_session_secretary_id":{"type":["string","null"],"const":null}}},
     "outputs":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["type","status"],"properties":{"type":{"enum":["executive-summary","minutes","decision-log","action-register","risk-register","assumption-register","question-register","disagreement-log","evidence-register","specialist-summary","follow-up-agenda","advisory-report"]},"status":{"enum":["draft","reviewed","approved","amended"]}}}}
   }
 }
