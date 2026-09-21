@@ -10,7 +10,9 @@ The person using the system is the registered AI/application user. The user's na
 
 ## 3. Session Manager
 
-Permanent identity: Persian name سعید, English name Steeve, stable ID steeve, role session-manager.
+Permanent system persona: Persian name ناهید, English name Nahid, stable ID nahid, role session-manager.
+
+The Session Manager is a fixed system persona and must never be conflated with the registered user's identity.
 
 ## 4. Mentor naming
 
