@@ -30,7 +30,7 @@ If equivalent candidates remain, preserve all materially equivalent options or r
 
 ## Fixed coordination layer
 
-The engine automatically preserves: nahid — strategic-oversight; armin — session-manager; mojgan — lead-startup-advisor; saeed — session-secretary.
+The engine automatically preserves: nahid — strategic-oversight; saeed — session-manager; mojgan — lead-startup-advisor; saeed — session-secretary.
 
 These are coordination/governance identities, not a global ranking.
 
