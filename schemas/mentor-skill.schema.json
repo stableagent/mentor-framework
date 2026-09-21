@@ -2,23 +2,99 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/stableagent/mentor-skills/blob/main/schemas/mentor-skill.schema.json",
   "title": "Mentor Skill",
-  "description": "Canonical structure for a startup mentor skill domain.",
+  "description": "Canonical structure for a reusable startup mentor skill.",
   "type": "object",
-  "required": ["id", "name", "definition", "sub_skills", "frameworks", "methods", "questions", "deliverables", "kpis", "tools", "red_flags", "common_mistakes", "decision_criteria", "escalation_rules"],
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "status",
+    "domain_ids",
+    "description",
+    "competencies",
+    "framework_ids",
+    "methodology_ids",
+    "metric_ids",
+    "tool_ids",
+    "related_skill_ids",
+    "questions",
+    "deliverables",
+    "red_flags",
+    "decision_criteria",
+    "escalation_rules"
+  ],
   "properties": {
-    "id": {"type": "string"},
-    "name": {"type": "string"},
-    "definition": {"type": "string"},
-    "sub_skills": {"type": "array", "items": {"type": "string"}},
-    "frameworks": {"type": "array", "items": {"type": "string"}},
-    "methods": {"type": "array", "items": {"type": "string"}},
-    "questions": {"type": "array", "items": {"type": "string"}},
-    "deliverables": {"type": "array", "items": {"type": "string"}},
-    "kpis": {"type": "array", "items": {"type": "string"}},
-    "tools": {"type": "array", "items": {"type": "string"}},
-    "red_flags": {"type": "array", "items": {"type": "string"}},
-    "common_mistakes": {"type": "array", "items": {"type": "string"}},
-    "decision_criteria": {"type": "array", "items": {"type": "string"}},
-    "escalation_rules": {"type": "array", "items": {"type": "string"}}
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "type": {
+      "const": "skill"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": ["draft", "active", "deprecated"]
+    },
+    "domain_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "competencies": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "framework_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "methodology_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "metric_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "tool_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "related_skill_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "questions": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "red_flags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "decision_criteria": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "escalation_rules": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
   }
 }
