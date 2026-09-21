@@ -2,13 +2,13 @@
 
 ## Purpose
 
-This standard defines how the advisory system converts a business problem into a temporary, scoped mentor team.
+This standard defines how the Mentor Routing Framework converts an organizational or business problem into a temporary, scoped mentor team.
 
 Selection is capability-based, not person-preference-based.
 
 ## Fixed system layer
 
-The fixed system layer is always available:
+The fixed coordination layer is always available:
 
 1. ناهید — Nahid — `nahid`: strategic oversight
 2. آرمین — Armin — `armin`: session management
@@ -42,7 +42,7 @@ A routed team contains:
 8. Mojgan integrates cross-domain specialist findings.
 9. Armin coordinates the active session.
 10. Saeed records the routing rationale and resulting team.
-11. The routing engine must not rank people or claim that one mentor is globally better than another.
+11. The Mentor Routing Framework must not rank people or claim that one mentor is globally better than another.
 12. The routing engine must not make the user's business decision.
 
 ## Coverage model
