@@ -11,6 +11,12 @@
       ]
     },
     {
+      "id": "general-mentor",
+      "name": "General Mentor",
+      "purpose": "Provides scoped advisory support only when explicitly assigned; this role has no fixed coordination authority.",
+      "fixed_person_id": null
+    },
+    {
       "id": "session-manager",
       "name": "Session Manager",
       "purpose": "Manages meeting lifecycle, agenda, focus, specialist proposals and participant approval workflow under strategic oversight.",
