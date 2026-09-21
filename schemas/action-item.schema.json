@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meeting Action Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "description",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "owner_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "due_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "open",
+        "in-progress",
+        "blocked",
+        "done",
+        "cancelled"
+      ]
+    },
+    "source_decision_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
