@@ -1,0 +1,74 @@
+{
+  "framework_version": "1.0",
+  "taxonomy_version": "1.0",
+  "context_profile": "routing",
+  "normalized_request": {
+    "problem_type": "startup-import-planning",
+    "startup_type": "medical-equipment-trading",
+    "stage": "pre-launch",
+    "jurisdiction": "IR",
+    "risk_level": "high"
+  },
+  "domains": [
+    "entrepreneurship-founder",
+    "import",
+    "international-trade",
+    "compliance",
+    "finance-financial-modeling",
+    "logistics"
+  ],
+  "required_skills": [
+    "business-model",
+    "import-procedure",
+    "customs-documentation",
+    "regulatory-compliance",
+    "landed-cost",
+    "trade-finance",
+    "logistics-planning"
+  ],
+  "roles": [
+    "lead-startup-advisor",
+    "import-export-mentor",
+    "legal-compliance-mentor",
+    "finance-mentor",
+    "operations-mentor"
+  ],
+  "mentor_teams": [
+    "startup-core",
+    "import-export",
+    "legal-compliance",
+    "finance-accounting",
+    "operations-supply-chain"
+  ],
+  "authority_rules": [
+    "user-final-decision",
+    "nahid-strategic-oversight",
+    "armin-session-management",
+    "mojgan-advisory-synthesis",
+    "saeed-session-record"
+  ],
+  "escalation_rules": [
+    "regulated-domain-external-review",
+    "jurisdiction-specific-professional-review"
+  ],
+  "provenance": [
+    {
+      "source": "mentor-framework",
+      "version": "main",
+      "path": "taxonomy/specialty-matrix.json"
+    },
+    {
+      "source": "mentor-framework",
+      "version": "main",
+      "path": "taxonomy/mentor-teams.json"
+    },
+    {
+      "source": "mentor-framework",
+      "version": "main",
+      "path": "standards/authority-matrix.md"
+    }
+  ],
+  "representation": {
+    "format": "json"
+  }
+}
