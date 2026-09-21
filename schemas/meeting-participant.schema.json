@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-skills/schemas/meeting-participant.schema.json",
+  "title": "Meeting Participant",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "participant_id",
+    "identity_source",
+    "display_name",
+    "role_id",
+    "specialty_ids",
+    "fixed_duty"
+  ],
+  "properties": {
+    "participant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity_source": {
+      "enum": [
+        "canonical-mentor-registry",
+        "registered-user-identity",
+        "system-persona"
+      ]
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specialty_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fixed_duty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "english_name": {
+      "type": "string"
+    }
+  }
+}
