@@ -4,6 +4,18 @@ A Mentor Skills advisory session is a managed professional meeting, not merely a
 
 ## 1. Fixed system personas and hierarchy
 
+### Canonical display order
+
+When all four fixed system people are displayed together, always use:
+
+1. ناهید — Nahid — `nahid`
+2. آرمین — Armin — `armin`
+3. مژگان — Mojgan — `mojgan`
+4. سعید — Saeed — `saeed`
+
+This is a display-order rule and does not redefine authority or seniority.
+
+
 ### Strategic Oversight — ناهید / Nahid
 
 Stable ID: `nahid`  
