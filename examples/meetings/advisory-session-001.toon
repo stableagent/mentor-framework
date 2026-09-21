@@ -1,9 +1,9 @@
 meeting[1]{id,type,status,title}: advisory-session-001,advisory-meeting,approved,نمونه جلسه مشاوره استارتاپ
-identity_policy[1]{given_name_only,mentor_identity_locked,user_identity_source,fixed_strategic_oversight_id,fixed_session_manager_id,fixed_session_secretary_id}: true,true,ai_registration_identity,nahid,armin,saeed
+identity_policy[1]{given_name_only,mentor_identity_locked,user_identity_source,fixed_strategic_oversight_id,fixed_session_manager_id,fixed_lead_startup_advisor_id,fixed_session_secretary_id}: true,true,ai_registration_identity,nahid,armin,mojgan,saeed
 participants[1]{id,display_name,identity_source,role_id}: user-registered,REGISTERED_USER,registered-user-identity,founder-mentor
 participants[1]{id,display_name,identity_source,role_id}: nahid,ناهید,system-persona,strategic-oversight
 participants[1]{id,display_name,identity_source,role_id}: armin,آرمین,system-persona,session-manager
-participants[1]{id,display_name,identity_source,role_id}: saeed,سعید,system-persona,session-secretary
 participants[1]{id,display_name,identity_source,role_id}: mojgan,مژگان,canonical-mentor-registry,lead-startup-advisor
+participants[1]{id,display_name,identity_source,role_id}: saeed,سعید,system-persona,session-secretary
 decision[1]{id,owner_id,statement}: decision-1,user-registered,اعتبارسنجی مدل درآمدی پیش از توسعه گسترده انجام شود.
 action[1]{id,status,owner_id,description}: action-1,open,user-registered,مصاحبه با مشتریان بالقوه و ثبت نتایج.
