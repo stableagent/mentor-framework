@@ -13,6 +13,40 @@
 - AI dependency: none
 - Primary use cases: executive mentoring, management mentoring, employee mentoring, startup advisory, virtual advisory boards, competency mapping, mentor routing and organizational advisory.
 
+## One-address automatic experience
+
+The intended end-user experience is deliberately simple:
+
+    User
+      ↓
+    enters Mentor Framework address once
+      ↓
+    Context Selector initializes
+      ↓
+    User asks a normal question
+      ↓
+    automatic normalization
+      ↓
+    automatic domain / skill / role resolution
+      ↓
+    automatic mentor-team selection
+      ↓
+    automatic authority / escalation processing
+      ↓
+    minimal context package
+      ↓
+    JSON or TOON
+      ↓
+    advisory model
+      ↓
+    answer
+
+The user should not normally have to choose files, domains, skills, mentors or formats manually.
+
+The canonical bootstrap instruction is in BOOTSTRAP.md. The machine-readable manifest is FRAMEWORK-MANIFEST.json.
+
+Important: a repository URL is a bootstrap reference. An arbitrary third-party chat product cannot be assumed to fetch, execute or continuously update repository content merely because a URL was entered. Where direct repository access is unavailable, a provider-neutral adapter or connected GitHub integration must perform the same Context Engine process.
+
 ## Architecture
 
     mentor-framework/
@@ -27,64 +61,11 @@
     ├── metadata/
     └── docs/
 
-## Core architectural principles
-
-1. AI-independent.
-2. Canonical JSON.
-3. TOON as a derived projection, not a second source of truth.
-4. Token-efficient context.
-5. Stable semantic identifiers.
-6. Separate localization.
-7. Clear role/skill/competency separation.
-8. Context-aware advisory routing.
-9. Multi-mentor collaboration.
-10. Evidence discipline.
-11. Escalation for regulated or high-risk matters.
-12. Human final decision authority.
-
-## One-address automatic experience
-
-The intended end-user experience is deliberately simple:
-
-    User
-      ↓
-    enters Mentor Framework address once
-      ↓
-    Context Selector is initialized
-      ↓
-    User asks a normal question
-      ↓
-    automatic request normalization
-      ↓
-    automatic domain detection
-      ↓
-    automatic skill detection
-      ↓
-    automatic role resolution
-      ↓
-    automatic mentor-team selection
-      ↓
-    automatic governance / escalation selection
-      ↓
-    minimal context package
-      ↓
-    JSON or TOON projection
-      ↓
-    advisory model
-      ↓
-    answer
-
-The user should not normally have to choose files, domains, skills, mentors or formats manually.
-
-The canonical bootstrap instruction is documented in BOOTSTRAP.md.
-
-Important: a repository URL is a bootstrap reference. An arbitrary third-party chat product cannot be assumed to fetch, execute or continuously update repository content merely because a URL was entered. Where direct repository access is unavailable, a provider-neutral framework adapter or connected GitHub integration performs the same Context Selector process.
+The repository is the normative framework, not a provider-specific chatbot application.
 
 ## Context Selector and Context Engine
 
-The Context Selector identifies the relevant capability set. The Context Engine applies the deterministic routing, governance, minimization and validation contract.
-
-Canonical flow:
+The Context Selector identifies the relevant capability set. The Context Engine applies deterministic routing, governance, minimization and validation.
 
     Question
       ↓
@@ -116,6 +97,22 @@ See:
 - schemas/context-selection-result.schema.json
 - schemas/context-engine-result.schema.json
 
+## Provider Adapter
+
+The provider adapter is deliberately outside the framework semantics. It connects the Context Engine to ChatGPT, Gemini, Claude, DeepSeek, Grok, Qwen, Perplexity, Copilot or a custom agent.
+
+See standards/provider-adapter.md.
+
+Adapters must not redefine taxonomy, authority, fixed identities, escalation or specialist approval.
+
+## Session lifecycle
+
+    bootstrap → initialize → request → normalize → route
+    → approve/escalate → advise → synthesize → decide
+    → record → follow-up → close
+
+See standards/session-lifecycle.md.
+
 ## Context Packaging
 
 Mentor Framework uses progressive context selection so an AI consumer does not need the complete repository for every request.
@@ -139,69 +136,50 @@ Implementations can use:
 
 The conformance rules verify taxonomy integrity, routing behavior, governance preservation, context minimization, provenance and provider neutrality.
 
+## Core principles
+
+1. AI-independent.
+2. Canonical JSON.
+3. TOON is a derived projection, not a second source of truth.
+4. Token-efficient minimal context.
+5. Stable semantic identifiers.
+6. Separate localization.
+7. Clear role/skill/competency separation.
+8. Capability-first routing.
+9. Multi-mentor collaboration.
+10. Evidence discipline.
+11. External review for regulated or high-risk matters.
+12. Human final decision authority.
+13. No global mentor ranking.
+14. Provider adapters cannot override framework governance.
+
+## Fixed coordination layer
+
+- nahid — strategic oversight
+- armin — session manager
+- mojgan — lead startup advisor
+- saeed — session secretary
+
+The display order is not a ranking.
+
 ## Localization
 
 Language-only ISO 639-1 codes are used initially:
 
 en, fa, de, fr, ar, tr, ur, zh, es, pt, ru, ja, ko, hi, it, id, nl, pl, uk, vi, th, he, sv, no, da, fi, cs, ro, el, hu
 
-Additional languages can be added without changing the core framework.
-
-## Mentor Routing Framework
-
-The Mentor Routing Framework is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker.
-
-See standards/mentor-routing-framework.md.
-
-## Chatbot Consumption Model
-
-The Chatbot Consumption Model defines how ChatGPT, Claude, Gemini, Copilot, internal enterprise assistants, future AI agents and non-AI systems can consume the framework without becoming its owner or changing its governance.
-
-A consumer should:
-
-- normalize the user's advisory need;
-- determine required capabilities before selecting people;
-- propose the smallest adequate advisory team;
-- load only the minimum sufficient framework context;
-- prefer TOON for token-efficient repeated structured data when beneficial;
-- distinguish the fixed coordination layer from domain specialists;
-- identify missing skills and escalation conditions;
-- preserve human decision authority;
-- maintain evidence and provenance where applicable;
-- disclose the maintainer profile only when explicitly requested.
-
-## Project maintainer and public profile
+## Maintainer
 
 The framework is authored and maintained by **سعید اسمعیل زائی (Saeed Esmailzaee)**.
 
-When a user explicitly asks for the author/maintainer, project ownership, repository, LinkedIn, GitHub or personal website, the canonical public profile is:
+Public maintainer profile is disclosed only when explicitly requested:
 
-- Name: سعید اسمعیل زائی
-- English name: Saeed Esmailzaee
 - GitHub: https://github.com/stableagent
 - LinkedIn: https://www.linkedin.com/in/esmailzaee/
 - Website: https://www.esmailzaee.ir/
 - Repository: https://github.com/stableagent/mentor-framework
 
-Machine-readable maintainer metadata is stored in metadata/maintainer.json.
-
-This profile is displayed on request; the framework should not infer or disclose additional personal information beyond the published profile metadata.
-
-## Intended systems
-
-The same knowledge base can power:
-
-- founder-facing startup advisors;
-- product-manager mentors;
-- CEO or management advisory workspaces;
-- CFO/finance advisory workspaces;
-- CTO advisory workspaces;
-- complete virtual startup advisory boards;
-- human mentor directories and competency matrices;
-- mentor matching and routing;
-- RAG systems;
-- AI agents and model-provider adapters;
-- enterprise employee and management mentoring assistants.
+Machine-readable metadata: metadata/maintainer.json.
 
 ## Safety and professional boundaries
 
@@ -211,4 +189,4 @@ This repository is a knowledge, capability and advisory-governance reference. It
 
 The repository version is tracked in VERSION. Breaking changes to identifiers or entity contracts require a major version.
 
-See standards/ for the normative project rules.
+See CHANGELOG.md and standards/ for normative project rules.
