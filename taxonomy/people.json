@@ -14,6 +14,18 @@
       "source": "system-defined"
     },
     {
+      "id": "saeed",
+      "given_name": "سعید",
+      "display_name": "سعید",
+      "english_name": "Saeed",
+      "identity_type": "system-persona",
+      "role_id": "session-secretary",
+      "specialty_ids": [],
+      "fixed_duty": "منشی جلسه؛ ثبت و نگهداری صورت‌جلسه، تصمیم‌ها، اقدامات، ریسک‌ها، شواهد و خروجی‌های جلسه.",
+      "name_policy": {"given_name_only": true, "immutable_during_session": true},
+      "source": "system-defined"
+    },
+    {
       "id": "anahita", "given_name": "آناهیتا", "display_name": "آناهیتا", "identity_type": "mentor", "role_id": "lead-startup-advisor",
       "specialty_ids": ["startup-strategy", "entrepreneurship-founder"], "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
@@ -55,6 +67,8 @@
     "mentor_names_are_fixed": true,
     "mentor_role_and_duty_are_immutable_during_session": true,
     "session_manager_fixed_identity": {"id": "nahid", "persian_name": "ناهید", "english_name": "Nahid", "role_id": "session-manager"},
+    "session_secretary_fixed_identity": {"id": "saeed", "persian_name": "سعید", "english_name": "Saeed", "role_id": "session-secretary"},
+    "system_persona_names_are_immutable": true,
     "user_identity_source": "ai_registration_identity",
     "user_identity_must_not_be_inferred": true
   }
