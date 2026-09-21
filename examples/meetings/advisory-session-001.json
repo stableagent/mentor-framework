@@ -3,7 +3,7 @@
   "type": "advisory-meeting",
   "status": "approved",
   "title": "نمونه جلسه مشاوره استارتاپ",
-  "identity_policy": {"given_name_only": true, "mentor_identity_locked": true, "user_identity_source": "ai_registration_identity"},
+  "identity_policy": {"given_name_only": true, "mentor_identity_locked": true, "user_identity_source": "ai_registration_identity", "fixed_session_manager_id": "nahid"},
   "participants": [
     {"id": "user-registered", "role_id": "founder-mentor", "status": "accepted", "display_name": "REGISTERED_USER", "identity_source": "registered-user-identity", "specialty_ids": [], "fixed_duty": "Founder / decision maker", "user_id": "runtime-user-id", "english_name": null},
     {"id": "nahid", "role_id": "session-manager", "status": "accepted", "display_name": "ناهید", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "مدیر جلسه؛ مالک کنترل جلسه، تأیید ورود متخصصان پیشنهادی و تصمیم‌های مدیریتی جلسه.", "user_id": null, "english_name": "Nahid"},
