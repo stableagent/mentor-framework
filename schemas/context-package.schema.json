@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-framework/blob/main/schemas/context-package.schema.json",
+  "title": "Mentor Framework Context Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "framework_version",
+    "taxonomy_version",
+    "context_profile",
+    "normalized_request",
+    "domains",
+    "required_skills",
+    "roles",
+    "mentor_teams",
+    "authority_rules",
+    "escalation_rules",
+    "provenance",
+    "representation"
+  ],
+  "properties": {
+    "framework_version": { "type": "string" },
+    "taxonomy_version": { "type": "string" },
+    "context_profile": {
+      "type": "string",
+      "enum": ["routing", "team-formation", "advisory", "recording"]
+    },
+    "normalized_request": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "domains": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "required_skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "mentor_teams": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "authority_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "escalation_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "specialists": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source"],
+        "properties": {
+          "source": { "type": "string" },
+          "version": { "type": "string" },
+          "path": { "type": "string" }
+        }
+      }
+    },
+    "representation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format"],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["json", "toon", "markdown"]
+        },
+        "toon_version": { "type": "string" },
+        "token_budget": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tokenizer": { "type": "string" }
+      }
+    }
+  }
+}
