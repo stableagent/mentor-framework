@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/domain.schema.json",
+  "title":"Mentor Domain",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","type","name","status","description"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "type":{"const":"domain"},
+    "name":{"type":"string"},
+    "status":{"enum":["draft","active","deprecated"]},
+    "description":{"type":"string"},
+    "parent_domain_id":{"type":["string","null"]},
+    "child_domain_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true}
+  }
+}
