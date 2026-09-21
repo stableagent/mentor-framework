@@ -1,0 +1,20 @@
+{
+  "request_id": "ctx-import-medical-equipment-001",
+  "routing_status": "escalation-required",
+  "framework_version": "1.0",
+  "taxonomy_version": "1.0",
+  "normalized_request": {"user_role": "founder", "organization_type": "trading-business", "stage": "early-growth", "problem_type": "import-planning", "jurisdiction": "Iran", "risk_level": "regulated"},
+  "domains": [{"id":"import","priority":"primary"},{"id":"international-trade","priority":"secondary"},{"id":"legal-compliance","priority":"secondary"},{"id":"supply-chain","priority":"secondary"}],
+  "required_skills": ["import-procedure","customs-documentation","landed-cost","trade-finance"],
+  "recommended_skills": ["logistics","compliance"],
+  "roles": ["import-export-mentor","supply-chain-mentor","legal-compliance-mentor"],
+  "mentor_team": {"team_id":"import-export","lead_role":"import-export-mentor","members":[{"role":"lead-startup-advisor","person_id":"mojgan","status":"fixed"},{"role":"import-export-mentor","person_id":"tahmineh","status":"approval-required"},{"role":"supply-chain-mentor","status":"approval-required"},{"role":"legal-compliance-mentor","status":"external-review"}]},
+  "authority_rules": ["human-final-decision-authority","nahid-strategic-oversight","armin-session-management","mojgan-advisory-synthesis","saeed-session-record"],
+  "escalation_rules": ["regulated-or-high-risk-matters-require-qualified-external-review","jurisdiction-specific-current-rules-must-be-verified"],
+  "missing_skills": [],
+  "approval": {"status":"required","reason":"Specialist activation and regulated external review require authorization."},
+  "selection_rationale": ["Import planning is primarily an import/export advisory problem.","International trade, supply-chain and legal/compliance capabilities materially affect the request.","External review is preserved because the request is regulated."],
+  "excluded_context": ["unrelated product, marketing, HR and technology domains"],
+  "provenance": {"source":"stableagent/mentor-framework","taxonomy_version":"1.0"},
+  "representation": {"format":"json"}
+}
