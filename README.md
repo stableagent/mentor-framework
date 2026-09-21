@@ -5,6 +5,7 @@
 ## Project status
 
 - Specification: Mentor Framework v1.0 foundation
+- Current repository version: 1.0.0
 - Canonical data model: JSON
 - LLM representation: TOON
 - Human documentation: Markdown
@@ -79,11 +80,11 @@ The canonical bootstrap instruction is documented in BOOTSTRAP.md.
 
 Important: a repository URL is a bootstrap reference. An arbitrary third-party chat product cannot be assumed to fetch, execute or continuously update repository content merely because a URL was entered. Where direct repository access is unavailable, a provider-neutral framework adapter or connected GitHub integration performs the same Context Selector process.
 
-## Context Selector
+## Context Selector and Context Engine
 
-The Context Selector is the automatic routing layer that converts a natural-language advisory request into the smallest sufficient Mentor Framework context.
+The Context Selector identifies the relevant capability set. The Context Engine applies the deterministic routing, governance, minimization and validation contract.
 
-Its canonical flow is:
+Canonical flow:
 
     Question
       ↓
@@ -102,48 +103,41 @@ Its canonical flow is:
     Authority / Escalation
       ↓
     Minimal Context Package
-
-The selector is capability-first, not person-first. It does not globally rank mentors and it does not make autonomous business decisions.
+      ↓
+    JSON or TOON
+      ↓
+    Advisory model
 
 See:
 
 - standards/context-selector.md
+- standards/context-engine.md
 - schemas/context-selection-request.schema.json
 - schemas/context-selection-result.schema.json
+- schemas/context-engine-result.schema.json
 
 ## Context Packaging
 
 Mentor Framework uses progressive context selection so an AI consumer does not need the complete repository for every request.
-
-The preferred pipeline is:
-
-    User Request
-        ↓
-    Problem Normalization
-        ↓
-    Relevant Domains
-        ↓
-    Required Skills
-        ↓
-    Relevant Roles
-        ↓
-    Relevant Mentor Teams
-        ↓
-    Governance / Escalation
-        ↓
-    Minimal Context Package
-        ↓
-    TOON projection when beneficial
-        ↓
-    AI reasoning
 
 See:
 
 - standards/context-packaging.md
 - schemas/context-package.schema.json
 - guides/using-mentor-framework.md
+- docs/automatic-consumption.md
 
 The guide contains provider-specific usage patterns for Gemini, DeepSeek, Perplexity, Grok, Claude, Qwen, Microsoft Copilot, ChatGPT and custom AI agents.
+
+## Validation and conformance
+
+Implementations can use:
+
+- validation/conformance.md
+- validation/reference-test-cases.json
+- docs/implementation-roadmap.md
+
+The conformance rules verify taxonomy integrity, routing behavior, governance preservation, context minimization, provenance and provider neutrality.
 
 ## Localization
 
@@ -175,15 +169,6 @@ A consumer should:
 - preserve human decision authority;
 - maintain evidence and provenance where applicable;
 - disclose the maintainer profile only when explicitly requested.
-
-See:
-
-- standards/chatbot-consumption-model.md
-- schemas/chatbot-consumption.schema.json
-- standards/format-and-token-efficiency.md
-- standards/context-packaging.md
-- standards/context-selector.md
-- guides/using-mentor-framework.md
 
 ## Project maintainer and public profile
 
@@ -224,6 +209,6 @@ This repository is a knowledge, capability and advisory-governance reference. It
 
 ## Versioning
 
-The taxonomy, schemas and generated representations are versioned independently where appropriate. Breaking changes to identifiers or entity contracts require a major version.
+The repository version is tracked in VERSION. Breaking changes to identifiers or entity contracts require a major version.
 
 See standards/ for the normative project rules.
