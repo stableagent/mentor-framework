@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/routing-request.schema.json",
+  "title":"Mentor Routing Request",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["request_id","user_role","startup_type","stage","problem_type","jurisdiction","risk_level","required_skills"],
+  "properties":{
+    "request_id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "user_role":{"type":"string"},
+    "startup_type":{"type":"string"},
+    "stage":{"enum":["idea","validation","pre-seed","seed","early-growth","growth","scale","mature","crisis","exit"]},
+    "problem_type":{"type":"string"},
+    "jurisdiction":{"type":"string"},
+    "risk_level":{"enum":["low","medium","high","critical"]},
+    "required_skills":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "industry":{"type":["string","null"]},
+    "business_model":{"type":["string","null"]},
+    "constraints":{"type":"array","items":{"type":"string"}},
+    "approved_specialist_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "context":{"type":"object","additionalProperties":true}
+  }
+}
