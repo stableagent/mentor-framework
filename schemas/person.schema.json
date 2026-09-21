@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-skills/schemas/person.schema.json",
+  "title": "Mentor Person",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "given_name",
+    "display_name",
+    "identity_type",
+    "role_id",
+    "specialty_ids",
+    "fixed_duty"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "given_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity_type": {
+      "enum": [
+        "user",
+        "mentor"
+      ]
+    },
+    "role_id": {
+      "type": "string"
+    },
+    "specialty_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fixed_duty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "given_name_only": {
+          "type": "boolean"
+        },
+        "immutable_during_session": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
