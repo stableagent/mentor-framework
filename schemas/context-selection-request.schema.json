@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-framework/blob/main/schemas/context-selection-request.schema.json",
+  "title": "Mentor Framework Context Selection Request",
+  "type": "object",
+  "required": ["framework_version", "user_request"],
+  "properties": {
+    "framework_version": {"type": "string"},
+    "user_request": {"type": "string", "minLength": 1},
+    "user_role": {"type": "string"},
+    "organization_type": {"type": "string"},
+    "startup_type": {"type": "string"},
+    "business_model": {"type": "string"},
+    "stage": {"type": "string"},
+    "problem_type": {"type": "string"},
+    "jurisdiction": {"type": "string"},
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "regulated", "unknown"]
+    },
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "approved_specialist_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "context_profile": {
+      "type": "string",
+      "enum": ["routing", "team-formation", "advisory", "record"],
+      "default": "advisory"
+    },
+    "target_representation": {
+      "type": "string",
+      "enum": ["auto", "json", "toon", "markdown"],
+      "default": "auto"
+    },
+    "token_budget": {"type": "integer", "minimum": 1},
+    "provider": {"type": "string"},
+    "context": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
