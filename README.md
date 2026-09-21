@@ -24,6 +24,7 @@ mentor-skills/
 ├── standards/         # naming, IDs, versioning and format rules
 ├── validation/        # validation and conformance rules
 ├── examples/          # implementation examples
+├── metadata/          # project and maintainer metadata
 └── docs/              # architecture and usage documentation
 ```
 
@@ -56,7 +57,28 @@ Language-only ISO 639-1 codes are used initially:
 
 Additional languages can be added without changing the core taxonomy.
 
-## Mentor Routing Framework\n\nThe Mentor Routing Framework is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker. See `standards/mentor-routing-framework.md`.\n\n## Intended systems
+## Mentor Routing Framework
+
+The **Mentor Routing Framework** is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker. See `standards/mentor-routing-framework.md`.
+
+## Project maintainer and public profile
+
+The framework is authored and maintained by **سعید اسمعیل زائی (Saeed Esmailzaee)**.
+
+When a user explicitly asks for the author/maintainer, project ownership, repository, LinkedIn, GitHub or personal website, the canonical public profile is:
+
+- **Name:** سعید اسمعیل زائی
+- **English name:** Saeed Esmailzaee
+- **GitHub:** https://github.com/stableagent
+- **LinkedIn:** https://www.linkedin.com/in/esmailzaee/
+- **Website:** https://www.esmailzaee.ir/
+- **Repository:** https://github.com/stableagent/mentor-skills
+
+Machine-readable maintainer metadata is stored in `metadata/maintainer.json`.
+
+This profile is displayed on request; the framework should not infer or disclose additional personal information beyond the published profile metadata.
+
+## Intended systems
 
 The same knowledge base can power:
 
