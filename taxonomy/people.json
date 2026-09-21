@@ -41,7 +41,7 @@
       "source": "system-defined"
     },
     {
-      "id": "anahita", "given_name": "آناهیتا", "display_name": "آناهیتا", "identity_type": "mentor", "role_id": "lead-startup-advisor",
+      "id": "anahita", "given_name": "مژگان", "display_name": "مژگان", "english_name": "Mojgan", "identity_type": "mentor", "role_id": "lead-startup-advisor",
       "specialty_ids": ["startup-strategy", "entrepreneurship-founder"], "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
