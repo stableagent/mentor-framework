@@ -1,6 +1,6 @@
 # Mentor Skills
 
-**Mentor Skills** is a multilingual, machine-readable taxonomy and knowledge foundation for professional startup mentoring and business advisory systems.
+**Mentor Skills** is a multilingual, machine-readable taxonomy and knowledge foundation for organizational mentoring and professional business advisory systems.
 
 ## Project status
 
@@ -10,7 +10,7 @@
 - **Human documentation:** Markdown
 - **Localization:** language-only ISO 639-1 codes
 - **AI dependency:** none
-- **Primary use cases:** human mentors, AI mentors, mentor routers, virtual advisory boards, competency mapping, startup diagnostics, APIs, RAG and agent systems.
+- **Primary use cases:** executive mentoring, management mentoring, employee mentoring, startup advisory, virtual advisory boards, competency mapping, mentor routing and organizational advisory.
 
 ## Architecture
 
@@ -36,7 +36,7 @@ mentor-skills/
 5. **Localization is separate:** language changes do not create new skills, roles or domains.
 6. **Role/skill separation:** a mentor role is a professional responsibility; a skill is a capability; a competency describes proficiency; a framework is a reusable method.
 7. **Context-aware advisory:** mentor selection can depend on user role, startup type, startup stage, problem and required skills.
-8. **Multi-mentor collaboration:** the system can compose a virtual advisory team and use a Lead Advisor to synthesize specialist perspectives.
+8. **Multi-mentor collaboration:** the framework can compose an advisory team and use a Lead Advisor to synthesize specialist perspectives.
 9. **Evidence discipline:** facts, assumptions, estimates, hypotheses and opinions must remain distinguishable.
 10. **Escalation:** regulated or high-risk matters require appropriate qualified professionals and current jurisdiction-specific verification.
 
@@ -56,7 +56,7 @@ Language-only ISO 639-1 codes are used initially:
 
 Additional languages can be added without changing the core taxonomy.
 
-## Intended systems
+## Mentor Routing Framework\n\nThe Mentor Routing Framework is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker. See `standards/mentor-routing-framework.md`.\n\n## Intended systems
 
 The same knowledge base can power:
 
