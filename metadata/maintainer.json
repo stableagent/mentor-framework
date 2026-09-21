@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "person": {
+    "name_fa": "سعید اسمعیل زائی",
+    "name_en": "Saeed Esmailzaee",
+    "role": "framework-author-and-maintainer"
+  },
+  "profiles": {
+    "github": "https://github.com/stableagent",
+    "linkedin": "https://www.linkedin.com/in/esmailzaee/",
+    "website": "https://www.esmailzaee.ir/"
+  },
+  "repository": {
+    "current_url": "https://github.com/stableagent/mentor-skills",
+    "target_name": "mentor-framework",
+    "target_url": null
+  },
+  "disclosure_policy": {
+    "display_on_request": true,
+    "display_fields": [
+      "name_fa",
+      "name_en",
+      "github",
+      "linkedin",
+      "website",
+      "repository"
+    ],
+    "do_not_infer_additional_personal_information": true
+  }
+}
