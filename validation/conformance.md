@@ -33,9 +33,9 @@ Conformance verifies that an implementation consumes the framework without chang
 
 - human final decision authority remains intact;
 - Nahid remains strategic oversight;
-- Armin remains session manager;
+- Saeed remains session manager;
 - Mojgan remains lead startup advisor;
-- Saeed remains session secretary;
+- Saeed remains session manager;
 - historical records are not silently rewritten;
 - provenance is retained.
 
