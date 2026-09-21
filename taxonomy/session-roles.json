@@ -3,7 +3,13 @@
   "session_roles": [
     {"id":"session-manager","name":"Session Manager","purpose":"Manages meeting lifecycle, agenda, focus, specialist proposals and participant approval workflow.","fixed_person_id":"nahid"},
     {"id":"lead-advisor","name":"Lead Advisor","purpose":"Leads advisory synthesis and integrates specialist recommendations."},
-    {"id":"session-secretary","name":"Session Secretary","purpose":"Maintains the structured meeting record, decisions, actions, risks, evidence and outputs."}
+    {"id":"session-secretary","name":"Session Secretary","purpose":"Maintains the structured meeting record, decisions, actions, risks, evidence and outputs.","fixed_person_id":"saeed"}
   ],
-  "policies": {"session_manager_identity_is_fixed": true, "session_manager_person_id": "nahid"}
+  "policies": {
+    "session_manager_identity_is_fixed": true,
+    "session_manager_person_id": "nahid",
+    "session_secretary_identity_is_fixed": true,
+    "session_secretary_person_id": "saeed",
+    "system_persona_names_are_immutable": true
+  }
 }
