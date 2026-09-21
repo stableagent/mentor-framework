@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.1",
+  "type": "advisory-role-registry",
+  "roles": [
+    {
+      "id": "accounting-mentor",
+      "name": "Accounting Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "ai-mentor",
+      "name": "Ai Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "brand-pr-mentor",
+      "name": "Brand Pr Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "crisis-pivot-mentor",
+      "name": "Crisis Pivot Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "cybersecurity-mentor",
+      "name": "Cybersecurity Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "data-analytics-mentor",
+      "name": "Data Analytics Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "exit-ma-mentor",
+      "name": "Exit Ma Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "finance-mentor",
+      "name": "Finance Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "founder-mentor",
+      "name": "Founder Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "fundraising-mentor",
+      "name": "Fundraising Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "general-mentor",
+      "name": "General Mentor",
+      "scope": "Scoped advisory support only when explicitly assigned."
+    },
+    {
+      "id": "growth-mentor",
+      "name": "Growth Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "hr-organization-mentor",
+      "name": "Hr Organization Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "import-export-mentor",
+      "name": "Import Export Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "international-expansion-mentor",
+      "name": "International Expansion Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "lead-startup-advisor",
+      "name": "Lead Startup Advisor",
+      "scope": "Fixed startup advisory synthesis."
+    },
+    {
+      "id": "legal-compliance-mentor",
+      "name": "Legal Compliance Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "market-research-mentor",
+      "name": "Market Research Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "marketing-mentor",
+      "name": "Marketing Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "operations-mentor",
+      "name": "Operations Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "product-mentor",
+      "name": "Product Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "risk-mentor",
+      "name": "Risk Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "sales-mentor",
+      "name": "Sales Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "session-manager",
+      "name": "Session Manager",
+      "scope": "Fixed session management under strategic oversight."
+    },
+    {
+      "id": "session-secretary",
+      "name": "Session Secretary",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "startup-strategy-mentor",
+      "name": "Startup Strategy Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "strategic-oversight",
+      "name": "Strategic Oversight",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "supply-chain-mentor",
+      "name": "Supply Chain Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "technology-mentor",
+      "name": "Technology Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    },
+    {
+      "id": "ux-mentor",
+      "name": "Ux Mentor",
+      "scope": "Domain-scoped advisory responsibility."
+    }
+  ]
+}
