@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/routing-result.schema.json",
+  "title":"Mentor Routing Result",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["request_id","routing_status","lead_role","members","required_skills","coverage","rationale","missing_skills","escalations","approval"],
+  "properties":{
+    "request_id":{"type":"string"},
+    "routing_status":{"enum":["ready","approval-required","partial","blocked"]},
+    "lead_role":{"type":"string"},
+    "lead_person_id":{"type":["string","null"]},
+    "members":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["role_id","status","reason"],"properties":{"role_id":{"type":"string"},"person_id":{"type":["string","null"]},"status":{"enum":["proposed","approved","declined","unavailable"]},"reason":{"type":"string"}}}},
+    "required_skills":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "coverage":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["skill_id","status"],"properties":{"skill_id":{"type":"string"},"status":{"enum":["covered","partially-covered","missing","requires-external-review"]},"covered_by_role_ids":{"type":"array","items":{"type":"string"}}}}},
+    "rationale":{"type":"array","items":{"type":"string"}},
+    "missing_skills":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "escalations":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["type","reason"],"properties":{"type":{"enum":["strategic","regulated","high-risk","missing-capability","authority"]},"reason":{"type":"string"},"target":{"type":["string","null"]}}}},
+    "approval":{"type":"object","additionalProperties":false,"required":["status","required"],"properties":{"status":{"enum":["not-required","pending-user","approved","declined","pre-authorized"]},"required":{"type":"boolean"}}},
+    "taxonomy_version":{"type":["string","null"]},
+    "routing_rule_version":{"type":["string","null"]}
+  }
+}
