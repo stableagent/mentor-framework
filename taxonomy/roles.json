@@ -1,0 +1,32 @@
+{
+  "taxonomy_version":"1.0.0",
+  "type":"role-registry",
+  "roles":[
+    {"id":"lead-startup-advisor","name":"Lead Startup Advisor"},
+    {"id":"startup-strategy-mentor","name":"Startup Strategy Mentor"},
+    {"id":"founder-mentor","name":"Founder Mentor"},
+    {"id":"market-research-mentor","name":"Market Research Mentor"},
+    {"id":"product-mentor","name":"Product Mentor"},
+    {"id":"ux-mentor","name":"UX Mentor"},
+    {"id":"growth-mentor","name":"Growth Mentor"},
+    {"id":"marketing-mentor","name":"Marketing Mentor"},
+    {"id":"sales-mentor","name":"Sales Mentor"},
+    {"id":"finance-mentor","name":"Finance Mentor"},
+    {"id":"accounting-mentor","name":"Accounting Mentor"},
+    {"id":"fundraising-mentor","name":"Fundraising Mentor"},
+    {"id":"operations-mentor","name":"Operations Mentor"},
+    {"id":"supply-chain-mentor","name":"Supply Chain Mentor"},
+    {"id":"import-export-mentor","name":"Import / Export Mentor"},
+    {"id":"legal-compliance-mentor","name":"Legal & Compliance Mentor"},
+    {"id":"technology-mentor","name":"Technology / CTO Mentor"},
+    {"id":"cybersecurity-mentor","name":"Cybersecurity Mentor"},
+    {"id":"ai-mentor","name":"AI Mentor"},
+    {"id":"data-analytics-mentor","name":"Data & Analytics Mentor"},
+    {"id":"hr-organization-mentor","name":"HR & Organization Mentor"},
+    {"id":"brand-pr-mentor","name":"Brand & PR Mentor"},
+    {"id":"international-expansion-mentor","name":"International Expansion Mentor"},
+    {"id":"risk-mentor","name":"Risk Mentor"},
+    {"id":"crisis-pivot-mentor","name":"Crisis & Pivot Mentor"},
+    {"id":"exit-ma-mentor","name":"Exit & M&A Mentor"}
+  ]
+}
