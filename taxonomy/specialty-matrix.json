@@ -42,7 +42,7 @@
     "hr-organization":{"roles":["hr-organization-mentor"],"skills":["organizational-design","hiring","performance-management"]},
     "operations":{"roles":["operations-mentor"],"skills":["process-design","operating-model","operations-kpis"]},
     "brand-public-relations":{"roles":["brand-pr-mentor","marketing-mentor"],"skills":["brand-positioning","public-relations","communications"]},
-    "international-expansion":{"roles":["international-expansion-mentor","international-business-law"],"skills":["market-entry","localization","international-operations"],"external_review":true},
+    "international-expansion":{"roles":["international-expansion-mentor","legal-compliance-mentor"],"skills":["market-entry","localization","international-operations"],"external_review":true},
     "insurance-business-protection":{"roles":["risk-mentor","finance-mentor"],"skills":["insurance-risk","business-protection","coverage-analysis"],"external_review":true},
     "crisis-failure-pivot":{"roles":["crisis-pivot-mentor","risk-mentor"],"skills":["crisis-response","turnaround","pivot-design"]},
     "exit-ma":{"roles":["exit-ma-mentor","finance-mentor","legal-compliance-mentor"],"skills":["exit-strategy","valuation","ma-readiness","transaction-risk"],"external_review":true}
