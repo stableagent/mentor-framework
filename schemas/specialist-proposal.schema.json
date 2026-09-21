@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Specialist Proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "role_id",
+    "reason",
+    "status",
+    "proposed_by"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "role_id": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "accepted",
+        "declined",
+        "expired",
+        "withdrawn"
+      ]
+    },
+    "proposed_by": {
+      "type": "string"
+    },
+    "approved_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}
