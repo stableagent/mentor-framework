@@ -2,181 +2,59 @@
   "schema_version": "1.0.0",
   "people": [
     {
-      "id": "steeve",
-      "given_name": "سعید",
-      "display_name": "سعید",
-      "english_name": "Steeve",
+      "id": "nahid",
+      "given_name": "ناهید",
+      "display_name": "ناهید",
+      "english_name": "Nahid",
       "identity_type": "system-persona",
       "role_id": "session-manager",
       "specialty_ids": [],
       "fixed_duty": "مدیر جلسه؛ مالک کنترل جلسه، تأیید ورود متخصصان پیشنهادی و تصمیم‌های مدیریتی جلسه.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      },
+      "name_policy": {"given_name_only": true, "immutable_during_session": true},
       "source": "system-defined"
     },
     {
-      "id": "anahita",
-      "given_name": "آناهیتا",
-      "display_name": "آناهیتا",
-      "identity_type": "mentor",
-      "role_id": "lead-startup-advisor",
-      "specialty_ids": [
-        "startup-strategy",
-        "entrepreneurship-founder"
-      ],
-      "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "anahita", "given_name": "آناهیتا", "display_name": "آناهیتا", "identity_type": "mentor", "role_id": "lead-startup-advisor",
+      "specialty_ids": ["startup-strategy", "entrepreneurship-founder"], "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "parmis",
-      "given_name": "پارمیس",
-      "display_name": "پارمیس",
-      "identity_type": "mentor",
-      "role_id": "finance-mentor",
-      "specialty_ids": [
-        "finance-financial-modeling",
-        "accounting"
-      ],
-      "fixed_duty": "متخصص مالی و حسابداری؛ تحلیل مالی، جریان نقدی، بودجه و ساختار حسابداری.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "parmis", "given_name": "پارمیس", "display_name": "پارمیس", "identity_type": "mentor", "role_id": "finance-mentor",
+      "specialty_ids": ["finance-financial-modeling", "accounting"], "fixed_duty": "متخصص مالی و حسابداری؛ تحلیل مالی، جریان نقدی، بودجه و ساختار حسابداری.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "tahmineh",
-      "given_name": "تهمینه",
-      "display_name": "تهمینه",
-      "identity_type": "mentor",
-      "role_id": "import-export-mentor",
-      "specialty_ids": [
-        "import",
-        "export",
-        "international-trade",
-        "trade-finance"
-      ],
-      "fixed_duty": "متخصص واردات و صادرات؛ رویه‌های تجارت خارجی، اسناد، تأمین و ریسک تجارت.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "tahmineh", "given_name": "تهمینه", "display_name": "تهمینه", "identity_type": "mentor", "role_id": "import-export-mentor",
+      "specialty_ids": ["import", "export", "international-trade", "trade-finance"], "fixed_duty": "متخصص واردات و صادرات؛ رویه‌های تجارت خارجی، اسناد، تأمین و ریسک تجارت.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "mahsheed",
-      "given_name": "مهشید",
-      "display_name": "مهشید",
-      "identity_type": "mentor",
-      "role_id": "operations-mentor",
-      "specialty_ids": [
-        "operations",
-        "warehouse-management",
-        "inventory-management"
-      ],
-      "fixed_duty": "متخصص عملیات، انبار و موجودی؛ طراحی فرایندهای عملیاتی و کنترل موجودی.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "mahsheed", "given_name": "مهشید", "display_name": "مهشید", "identity_type": "mentor", "role_id": "operations-mentor",
+      "specialty_ids": ["operations", "warehouse-management", "inventory-management"], "fixed_duty": "متخصص عملیات، انبار و موجودی؛ طراحی فرایندهای عملیاتی و کنترل موجودی.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "parnia",
-      "given_name": "پرنیا",
-      "display_name": "پرنیا",
-      "identity_type": "mentor",
-      "role_id": "market-research-mentor",
-      "specialty_ids": [
-        "market-research",
-        "idea-validation-customer-discovery"
-      ],
-      "fixed_duty": "متخصص تحقیق بازار و اعتبارسنجی؛ طراحی پژوهش، مصاحبه مشتری و تحلیل تقاضا.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "parnia", "given_name": "پرنیا", "display_name": "پرنیا", "identity_type": "mentor", "role_id": "market-research-mentor",
+      "specialty_ids": ["market-research", "idea-validation-customer-discovery"], "fixed_duty": "متخصص تحقیق بازار و اعتبارسنجی؛ طراحی پژوهش، مصاحبه مشتری و تحلیل تقاضا.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "taraneh",
-      "given_name": "ترانه",
-      "display_name": "ترانه",
-      "identity_type": "mentor",
-      "role_id": "product-mentor",
-      "specialty_ids": [
-        "product-management",
-        "business-model"
-      ],
-      "fixed_duty": "متخصص محصول و مدل کسب‌وکار؛ مسئله، ارزش پیشنهادی، اولویت‌بندی و مدل درآمدی.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "taraneh", "given_name": "ترانه", "display_name": "ترانه", "identity_type": "mentor", "role_id": "product-mentor",
+      "specialty_ids": ["product-management", "business-model"], "fixed_duty": "متخصص محصول و مدل کسب‌وکار؛ مسئله، ارزش پیشنهادی، اولویت‌بندی و مدل درآمدی.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "sepideh",
-      "given_name": "سپیده",
-      "display_name": "سپیده",
-      "identity_type": "mentor",
-      "role_id": "marketing-mentor",
-      "specialty_ids": [
-        "marketing",
-        "growth",
-        "brand-public-relations"
-      ],
-      "fixed_duty": "متخصص بازاریابی، رشد و برند؛ جایگاه‌یابی، کانال‌ها، جذب و رشد.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "sepideh", "given_name": "سپیده", "display_name": "سپیده", "identity_type": "mentor", "role_id": "marketing-mentor",
+      "specialty_ids": ["marketing", "growth", "brand-public-relations"], "fixed_duty": "متخصص بازاریابی، رشد و برند؛ جایگاه‌یابی، کانال‌ها، جذب و رشد.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "yeganeh",
-      "given_name": "یگانه",
-      "display_name": "یگانه",
-      "identity_type": "mentor",
-      "role_id": "legal-compliance-mentor",
-      "specialty_ids": [
-        "startup-business-law",
-        "compliance",
-        "intellectual-property"
-      ],
-      "fixed_duty": "متخصص حقوق و انطباق؛ شناسایی ریسک حقوقی، قراردادها، مالکیت فکری و الزامات انطباق.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "yeganeh", "given_name": "یگانه", "display_name": "یگانه", "identity_type": "mentor", "role_id": "legal-compliance-mentor",
+      "specialty_ids": ["startup-business-law", "compliance", "intellectual-property"], "fixed_duty": "متخصص حقوق و انطباق؛ شناسایی ریسک حقوقی، قراردادها، مالکیت فکری و الزامات انطباق.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     },
     {
-      "id": "anahid",
-      "given_name": "آناهید",
-      "display_name": "آناهید",
-      "identity_type": "mentor",
-      "role_id": "technology-mentor",
-      "specialty_ids": [
-        "technology-cto",
-        "cybersecurity",
-        "ai"
-      ],
-      "fixed_duty": "متخصص فناوری؛ معماری فنی، امنیت، انتخاب فناوری و آمادگی برای AI.",
-      "name_policy": {
-        "given_name_only": true,
-        "immutable_during_session": true
-      }
+      "id": "anahid", "given_name": "آناهید", "display_name": "آناهید", "identity_type": "mentor", "role_id": "technology-mentor",
+      "specialty_ids": ["technology-cto", "cybersecurity", "ai"], "fixed_duty": "متخصص فناوری؛ معماری فنی، امنیت، انتخاب فناوری و آمادگی برای AI.", "name_policy": {"given_name_only": true, "immutable_during_session": true}
     }
   ],
   "policies": {
     "all_people_use_given_name_only": true,
     "mentor_names_are_fixed": true,
     "mentor_role_and_duty_are_immutable_during_session": true,
-    "session_manager_fixed_identity": {
-      "id": "steeve",
-      "persian_name": "سعید",
-      "english_name": "Steeve",
-      "role_id": "session-manager"
-    },
+    "session_manager_fixed_identity": {"id": "nahid", "persian_name": "ناهید", "english_name": "Nahid", "role_id": "session-manager"},
     "user_identity_source": "ai_registration_identity",
     "user_identity_must_not_be_inferred": true
   }
