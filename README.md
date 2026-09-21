@@ -4,56 +4,112 @@
 
 ## Project status
 
-- **Specification:** Mentor Framework v1.0 foundation
-- **Canonical data model:** JSON
-- **LLM representation:** TOON
-- **Human documentation:** Markdown
-- **Localization:** language-only ISO 639-1 codes
-- **AI dependency:** none
-- **Primary use cases:** executive mentoring, management mentoring, employee mentoring, startup advisory, virtual advisory boards, competency mapping, mentor routing and organizational advisory.
+- Specification: Mentor Framework v1.0 foundation
+- Canonical data model: JSON
+- LLM representation: TOON
+- Human documentation: Markdown
+- Localization: language-only ISO 639-1 codes
+- AI dependency: none
+- Primary use cases: executive mentoring, management mentoring, employee mentoring, startup advisory, virtual advisory boards, competency mapping, mentor routing and organizational advisory.
 
 ## Architecture
 
-~~~
-mentor-framework/
-├── taxonomy/          # domains, roles, skills, competencies and relationships
-├── knowledge/         # frameworks, methodologies, metrics, models and playbooks
-├── localization/     # language-specific human-readable names and descriptions
-├── schemas/           # JSON Schemas and data contracts
-├── data/              # canonical JSON and generated TOON representations
-├── standards/         # naming, IDs, versioning, routing and governance rules
-├── validation/        # validation and conformance rules
-├── examples/          # implementation examples
-├── metadata/          # project and maintainer metadata
-└── docs/              # architecture and usage documentation
-~~~
+    mentor-framework/
+    ├── taxonomy/
+    ├── knowledge/
+    ├── localization/
+    ├── schemas/
+    ├── data/
+    ├── standards/
+    ├── validation/
+    ├── examples/
+    ├── metadata/
+    └── docs/
 
 ## Core architectural principles
 
-1. **AI-independent:** the framework does not depend on a particular model provider or native skill system.
-2. **Canonical JSON:** JSON is the source-of-truth interchange representation.
-3. **TOON as a projection:** TOON is generated from canonical JSON for LLM context where its compact representation is useful. TOON is not maintained as a second source of truth.
-4. **Token-efficient context:** consumers should send the minimum sufficient framework context rather than the entire knowledge base.
-5. **Stable identifiers:** semantic IDs are language-neutral and stable across translations.
-6. **Localization is separate:** language changes do not create new skills, roles or domains.
-7. **Role/skill separation:** a mentor role is a professional responsibility; a skill is a capability; a competency describes proficiency; a framework is a reusable method.
-8. **Context-aware advisory:** mentor selection can depend on user role, organization type, stage, problem and required skills.
-9. **Multi-mentor collaboration:** the framework can compose an advisory team and use a Lead Advisor to synthesize specialist perspectives.
-10. **Evidence discipline:** facts, assumptions, estimates, hypotheses and opinions must remain distinguishable.
-11. **Escalation:** regulated or high-risk matters require appropriate qualified professionals and current jurisdiction-specific verification.
-12. **Human decision authority:** mentors and chatbot consumers advise, organize and document; authorized humans make business decisions.
+1. AI-independent.
+2. Canonical JSON.
+3. TOON as a derived projection, not a second source of truth.
+4. Token-efficient context.
+5. Stable semantic identifiers.
+6. Separate localization.
+7. Clear role/skill/competency separation.
+8. Context-aware advisory routing.
+9. Multi-mentor collaboration.
+10. Evidence discipline.
+11. Escalation for regulated or high-risk matters.
+12. Human final decision authority.
 
-## Formats
+## One-address automatic experience
 
-JSON is the canonical representation for validation, storage interchange and programmatic processing.
+The intended end-user experience is deliberately simple:
 
-TOON is the preferred LLM-facing projection when it provides a smaller or otherwise more efficient representation for the relevant structured data. It is especially useful for repeated, uniform records such as skills, roles, mentor registries, routing tables and team definitions. Compact JSON remains acceptable when it is smaller or operationally safer for a particular payload.
+    User
+      ↓
+    enters Mentor Framework address once
+      ↓
+    Context Selector is initialized
+      ↓
+    User asks a normal question
+      ↓
+    automatic request normalization
+      ↓
+    automatic domain detection
+      ↓
+    automatic skill detection
+      ↓
+    automatic role resolution
+      ↓
+    automatic mentor-team selection
+      ↓
+    automatic governance / escalation selection
+      ↓
+    minimal context package
+      ↓
+    JSON or TOON projection
+      ↓
+    advisory model
+      ↓
+    answer
 
-The current published TOON specification is v4.1 (2026-07-25), a stable working draft. This repository treats TOON as a version-pinned projection, not as a second source of truth.
+The user should not normally have to choose files, domains, skills, mentors or formats manually.
 
-See standards/format-and-token-efficiency.md.
+The canonical bootstrap instruction is documented in BOOTSTRAP.md.
 
-Markdown is used for human-facing documentation.
+Important: a repository URL is a bootstrap reference. An arbitrary third-party chat product cannot be assumed to fetch, execute or continuously update repository content merely because a URL was entered. Where direct repository access is unavailable, a provider-neutral framework adapter or connected GitHub integration performs the same Context Selector process.
+
+## Context Selector
+
+The Context Selector is the automatic routing layer that converts a natural-language advisory request into the smallest sufficient Mentor Framework context.
+
+Its canonical flow is:
+
+    Question
+      ↓
+    Normalized Request
+      ↓
+    Domains
+      ↓
+    Required Skills
+      ↓
+    Mentor Roles
+      ↓
+    Mentor Team
+      ↓
+    Specialists and approvals
+      ↓
+    Authority / Escalation
+      ↓
+    Minimal Context Package
+
+The selector is capability-first, not person-first. It does not globally rank mentors and it does not make autonomous business decisions.
+
+See:
+
+- standards/context-selector.md
+- schemas/context-selection-request.schema.json
+- schemas/context-selection-result.schema.json
 
 ## Context Packaging
 
@@ -61,27 +117,25 @@ Mentor Framework uses progressive context selection so an AI consumer does not n
 
 The preferred pipeline is:
 
-~~~
-User Request
-    ↓
-Problem Normalization
-    ↓
-Relevant Domains
-    ↓
-Required Skills
-    ↓
-Relevant Roles
-    ↓
-Relevant Mentor Teams
-    ↓
-Governance / Escalation
-    ↓
-Minimal Context Package
-    ↓
-TOON projection when beneficial
-    ↓
-AI reasoning
-~~~
+    User Request
+        ↓
+    Problem Normalization
+        ↓
+    Relevant Domains
+        ↓
+    Required Skills
+        ↓
+    Relevant Roles
+        ↓
+    Relevant Mentor Teams
+        ↓
+    Governance / Escalation
+        ↓
+    Minimal Context Package
+        ↓
+    TOON projection when beneficial
+        ↓
+    AI reasoning
 
 See:
 
@@ -101,11 +155,13 @@ Additional languages can be added without changing the core framework.
 
 ## Mentor Routing Framework
 
-The **Mentor Routing Framework** is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker. See standards/mentor-routing-framework.md.
+The Mentor Routing Framework is the repository's organizational model for identifying required advisory capabilities, roles, specialists, escalation conditions and approvals. It is technology-independent and is not itself an application, API or autonomous decision-maker.
+
+See standards/mentor-routing-framework.md.
 
 ## Chatbot Consumption Model
 
-The **Chatbot Consumption Model** defines how ChatGPT, Claude, Gemini, Copilot, internal enterprise assistants, future AI agents and non-AI systems can consume the framework without becoming its owner or changing its governance.
+The Chatbot Consumption Model defines how ChatGPT, Claude, Gemini, Copilot, internal enterprise assistants, future AI agents and non-AI systems can consume the framework without becoming its owner or changing its governance.
 
 A consumer should:
 
@@ -126,9 +182,8 @@ See:
 - schemas/chatbot-consumption.schema.json
 - standards/format-and-token-efficiency.md
 - standards/context-packaging.md
+- standards/context-selector.md
 - guides/using-mentor-framework.md
-
-The same framework can therefore serve multiple chatbot providers without creating provider-specific versions of the framework.
 
 ## Project maintainer and public profile
 
@@ -136,12 +191,12 @@ The framework is authored and maintained by **سعید اسمعیل زائی (Sa
 
 When a user explicitly asks for the author/maintainer, project ownership, repository, LinkedIn, GitHub or personal website, the canonical public profile is:
 
-- **Name:** سعید اسمعیل زائی
-- **English name:** Saeed Esmailzaee
-- **GitHub:** https://github.com/stableagent
-- **LinkedIn:** https://www.linkedin.com/in/esmailzaee/
-- **Website:** https://www.esmailzaee.ir/
-- **Repository:** https://github.com/stableagent/mentor-framework
+- Name: سعید اسمعیل زائی
+- English name: Saeed Esmailzaee
+- GitHub: https://github.com/stableagent
+- LinkedIn: https://www.linkedin.com/in/esmailzaee/
+- Website: https://www.esmailzaee.ir/
+- Repository: https://github.com/stableagent/mentor-framework
 
 Machine-readable maintainer metadata is stored in metadata/maintainer.json.
 
@@ -151,12 +206,12 @@ This profile is displayed on request; the framework should not infer or disclose
 
 The same knowledge base can power:
 
-- a founder-facing startup advisor;
-- a product-manager mentor;
-- a CEO or management advisory workspace;
-- a CFO/finance advisory workspace;
-- a CTO advisory workspace;
-- a complete virtual startup advisory board;
+- founder-facing startup advisors;
+- product-manager mentors;
+- CEO or management advisory workspaces;
+- CFO/finance advisory workspaces;
+- CTO advisory workspaces;
+- complete virtual startup advisory boards;
 - human mentor directories and competency matrices;
 - mentor matching and routing;
 - RAG systems;
