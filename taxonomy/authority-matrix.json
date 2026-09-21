@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "authority_matrix": {
+    "canonical_display_order": ["nahid", "armin", "mojgan", "saeed"],
+    "final_decision_maker": "user-registered",
+    "actors": [
+      {
+        "id": "nahid",
+        "role_id": "strategic-oversight",
+        "authority_level": "strategic-oversight",
+        "supervises": ["armin"],
+        "may_override_process": true,
+        "may_make_user_decision": false
+      },
+      {
+        "id": "armin",
+        "role_id": "session-manager",
+        "authority_level": "session-management",
+        "reports_to": "nahid",
+        "may_override_process": false,
+        "may_make_user_decision": false
+      },
+      {
+        "id": "mojgan",
+        "role_id": "lead-startup-advisor",
+        "authority_level": "lead-advisory-synthesis",
+        "reports_to": "armin",
+        "may_override_process": false,
+        "may_make_user_decision": false
+      },
+      {
+        "id": "saeed",
+        "role_id": "session-secretary",
+        "authority_level": "session-documentation",
+        "reports_to": "armin",
+        "may_override_process": false,
+        "may_make_user_decision": false
+      },
+      {
+        "id": "domain-specialist",
+        "role_id": "domain-specialist",
+        "authority_level": "scoped-domain-analysis",
+        "may_override_process": false,
+        "may_make_user_decision": false
+      }
+    ],
+    "rules": {
+      "specialist_addition_requires_user_approval_unless_pre_authorized": true,
+      "strategic_conflict_escalates_to": "nahid",
+      "integrated_advisory_synthesis_owned_by": "mojgan",
+      "canonical_record_owned_by": "saeed",
+      "session_lifecycle_owned_by": "armin",
+      "historical_records_are_immutable": true,
+      "user_decision_is_separate_from_recommendation": true,
+      "regulated_or_high_risk_matters_require_current_authoritative_verification": true
+    }
+  }
+}
