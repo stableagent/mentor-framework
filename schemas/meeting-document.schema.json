@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meeting Document Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "status",
+    "meeting_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "meeting_id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "executive-summary",
+        "minutes",
+        "decision-log",
+        "action-register",
+        "risk-register",
+        "assumption-register",
+        "question-register",
+        "disagreement-log",
+        "evidence-register",
+        "specialist-summary",
+        "follow-up-agenda",
+        "advisory-report"
+      ]
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "approved",
+        "amended"
+      ]
+    },
+    "format": {
+      "enum": [
+        "json",
+        "toon",
+        "markdown",
+        "yaml",
+        "html",
+        "pdf",
+        "docx"
+      ]
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "content": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
