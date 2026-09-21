@@ -4,6 +4,6 @@ participants[1]{id,display_name,identity_source,role_id}: user-registered,REGIST
 participants[1]{id,display_name,identity_source,role_id}: nahid,ناهید,system-persona,strategic-oversight
 participants[1]{id,display_name,identity_source,role_id}: armin,آرمین,system-persona,session-manager
 participants[1]{id,display_name,identity_source,role_id}: saeed,سعید,system-persona,session-secretary
-participants[1]{id,display_name,identity_source,role_id}: anahita,مژگان,canonical-mentor-registry,lead-startup-advisor
+participants[1]{id,display_name,identity_source,role_id}: mojgan,مژگان,canonical-mentor-registry,lead-startup-advisor
 decision[1]{id,owner_id,statement}: decision-1,user-registered,اعتبارسنجی مدل درآمدی پیش از توسعه گسترده انجام شود.
 action[1]{id,status,owner_id,description}: action-1,open,user-registered,مصاحبه با مشتریان بالقوه و ثبت نتایج.
