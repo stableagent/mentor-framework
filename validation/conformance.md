@@ -12,7 +12,8 @@ Conformance verifies that an implementation consumes the framework without chang
 - framework version is recorded;
 - canonical JSON files parse successfully;
 - JSON Schemas parse successfully;
-- all referenced role IDs exist in the role registry;
+- all referenced role IDs exist in taxonomy/advisory-roles.json;
+- all referenced skill IDs exist in taxonomy/skills.json;
 - all referenced person IDs exist in the people registry;
 - all team IDs exist in mentor-teams.json;
 - all domain IDs exist in the specialty matrix;
