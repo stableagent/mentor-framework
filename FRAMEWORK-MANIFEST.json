@@ -1,7 +1,7 @@
 {
   "framework_id":"mentor-framework",
   "name":"Mentor Framework",
-  "version":"1.0.0",
+  "version":"1.0.1",
   "repository":"https://github.com/stableagent/mentor-framework",
   "canonical_representation":"json",
   "derived_llm_representation":"toon",
@@ -11,7 +11,7 @@
   "session_lifecycle":"standards/session-lifecycle.md",
   "provider_adapter_standard":"standards/provider-adapter.md",
   "minimum_bootstrap":["README.md","BOOTSTRAP.md","standards/context-selector.md","standards/context-engine.md","standards/context-packaging.md","standards/chatbot-consumption-model.md","standards/authority-matrix.md","standards/mentor-team-selection.md","standards/mentor-routing-framework.md","schemas/context-selection-request.schema.json","schemas/context-selection-result.schema.json","schemas/context-package.schema.json","schemas/context-engine-result.schema.json","taxonomy/session-roles.json","taxonomy/mentor-teams.json","taxonomy/specialty-matrix.json","taxonomy/people.json"],
-  "fixed_person_ids":["nahid","armin","mojgan","saeed"],
+  "fixed_person_ids":["nahid","saeed","mojgan"],
   "human_final_decision_authority":true,
   "global_mentor_ranking":false
 }
