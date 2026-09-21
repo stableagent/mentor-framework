@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/stableagent/mentor-framework/blob/main/schemas/chatbot-consumption.schema.json",
+  "title": "Mentor Framework Chatbot Consumption Contract",
+  "description": "Technology-independent contract for chatbot consumers of Mentor Framework.",
+  "type": "object",
+  "required": [
+    "consumer_id",
+    "framework_version",
+    "advisory_need",
+    "routing",
+    "authority",
+    "disclosure"
+  ],
+  "properties": {
+    "consumer_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "framework_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "advisory_need": {
+      "type": "object",
+      "required": [
+        "normalized",
+        "required_skills"
+      ],
+      "properties": {
+        "normalized": {
+          "type": "boolean"
+        },
+        "required_skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "routing": {
+      "type": "object",
+      "required": [
+        "capability_first",
+        "team_proposed"
+      ],
+      "properties": {
+        "capability_first": {
+          "const": true
+        },
+        "team_proposed": {
+          "type": "boolean"
+        },
+        "missing_skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "escalations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "authority": {
+      "type": "object",
+      "required": [
+        "human_decision_authority",
+        "autonomous_business_decision"
+      ],
+      "properties": {
+        "human_decision_authority": {
+          "const": true
+        },
+        "autonomous_business_decision": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "disclosure": {
+      "type": "object",
+      "required": [
+        "maintainer_profile_on_request_only"
+      ],
+      "properties": {
+        "maintainer_profile_on_request_only": {
+          "const": true
+        },
+        "do_not_infer_additional_personal_information": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
