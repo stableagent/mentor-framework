@@ -1,0 +1,15 @@
+{
+  "request_id":"route-founder-finance-001",
+  "user_role":"founder",
+  "startup_type":"software-startup",
+  "stage":"seed",
+  "problem_type":"cash-flow-and-financial-model",
+  "jurisdiction":"IR",
+  "risk_level":"medium",
+  "required_skills":["financial-modeling","cash-flow-management","unit-economics"],
+  "industry":"software",
+  "business_model":"subscription",
+  "constraints":["limited-runway"],
+  "approved_specialist_ids":["parmis"],
+  "context":{}
+}
