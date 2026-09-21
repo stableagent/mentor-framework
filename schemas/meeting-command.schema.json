@@ -1,14 +1,14 @@
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/meeting-command.schema.json",
+  "$id":"https://github.com/stableagent/mentor-framework/blob/main/schemas/meeting-command.schema.json",
   "title":"Meeting Command",
   "type":"object",
   "additionalProperties":false,
   "required":["id","issued_by","target","command"],
   "properties":{
     "id":{"type":"string"},
-    "issued_by":{"const":"armin"},
-    "target":{"const":"saeed"},
+    "issued_by":{"const":"saeed"},
+    "target":{"const":"session-recorder"},
     "command":{"enum":["REGISTER_AGENDA","RECORD_NOTE","CLASSIFY_NOTE","RECORD_DECISION","RECORD_ACTION","RECORD_RISK","RECORD_ASSUMPTION","RECORD_OPEN_QUESTION","RECORD_DISAGREEMENT","REGISTER_EVIDENCE","SUMMARIZE_SECTION","GENERATE_INTERIM_MINUTES","PREPARE_CLOSING_RECORD","GENERATE_FINAL_MINUTES","PREPARE_ARCHIVE_PROPOSAL"]},
     "payload":{"type":["object","null"]},
     "created_at":{"type":["string","null"],"format":"date-time"}
