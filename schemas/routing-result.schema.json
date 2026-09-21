@@ -1,6 +1,6 @@
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/routing-result.schema.json",
+  "$id":"https://github.com/stableagent/mentor-framework/blob/main/schemas/routing-result.schema.json",
   "title":"Mentor Routing Result",
   "type":"object",
   "additionalProperties":false,
