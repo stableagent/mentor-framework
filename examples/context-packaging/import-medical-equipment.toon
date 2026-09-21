@@ -1,0 +1,43 @@
+context_profile: routing
+normalized_request:
+  problem_type: startup-import-planning
+  startup_type: medical-equipment-trading
+  stage: pre-launch
+  jurisdiction: IR
+  risk_level: high
+domains[6]{id}:
+entrepreneurship-founder
+import
+international-trade
+compliance
+finance-financial-modeling
+logistics
+required_skills[7]{id}:
+business-model
+import-procedure
+customs-documentation
+regulatory-compliance
+landed-cost
+trade-finance
+logistics-planning
+roles[5]{id}:
+lead-startup-advisor
+import-export-mentor
+legal-compliance-mentor
+finance-mentor
+operations-mentor
+mentor_teams[5]{id}:
+startup-core
+import-export
+legal-compliance
+finance-accounting
+operations-supply-chain
+authority_rules[5]{id}:
+user-final-decision
+nahid-strategic-oversight
+armin-session-management
+mojgan-advisory-synthesis
+saeed-session-record
+escalation_rules[2]{id}:
+regulated-domain-external-review
+jurisdiction-specific-professional-review
