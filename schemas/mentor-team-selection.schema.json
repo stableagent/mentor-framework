@@ -1,6 +1,6 @@
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/mentor-team-selection.schema.json",
+  "$id":"https://github.com/stableagent/mentor-framework/blob/main/schemas/mentor-team-selection.schema.json",
   "title":"Mentor Team Selection",
   "type":"object",
   "additionalProperties":false,
