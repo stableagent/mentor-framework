@@ -1,0 +1,12 @@
+{
+  "framework_version": "1.0",
+  "user_request": "I want to import dental equipment into Iran. What should I consider before starting?",
+  "user_role": "founder",
+  "organization_type": "trading-business",
+  "stage": "early-growth",
+  "problem_type": "import-planning",
+  "jurisdiction": "Iran",
+  "risk_level": "regulated",
+  "context_profile": "advisory",
+  "target_representation": "auto"
+}
