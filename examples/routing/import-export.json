@@ -1,0 +1,15 @@
+{
+  "request_id":"route-import-export-001",
+  "user_role":"founder",
+  "startup_type":"trading-business",
+  "stage":"early-growth",
+  "problem_type":"import-and-landed-cost",
+  "jurisdiction":"IR",
+  "risk_level":"high",
+  "required_skills":["import-procedure","customs-documentation","landed-cost","trade-finance"],
+  "industry":"medical-equipment",
+  "business_model":"distribution",
+  "constraints":["currency-volatility"],
+  "approved_specialist_ids":[],
+  "context":{}
+}
