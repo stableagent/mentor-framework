@@ -63,6 +63,10 @@ Important: a repository URL is a bootstrap reference. An arbitrary third-party c
 
 The repository is the normative framework, not a provider-specific chatbot application.
 
+## Canonical Taxonomy Registries
+
+The canonical taxonomy is split into people, advisory roles and skills. `taxonomy/people.json` defines fixed identities and mentors; `taxonomy/advisory-roles.json` defines role IDs; `taxonomy/skills.json` defines stable skill IDs. Specialty and team registries reference these IDs.
+
 ## Context Selector and Context Engine
 
 The Context Selector identifies the relevant capability set. The Context Engine applies deterministic routing, governance, minimization and validation.
