@@ -35,7 +35,7 @@ Conformance verifies that an implementation consumes the framework without chang
 - Nahid remains strategic oversight;
 - Saeed remains session manager;
 - Mojgan remains lead startup advisor;
-- Saeed remains session manager;
+- session recording remains a system function and has no fixed person identity;
 - historical records are not silently rewritten;
 - provenance is retained.
 
