@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/knowledge-entity.schema.json",
+  "title":"Mentor Knowledge Entity",
+  "description":"Base contract for frameworks, methodologies, metrics and tools.",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","type","name","status","description"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "type":{"enum":["framework","methodology","metric","tool","model","playbook"]},
+    "name":{"type":"string"},
+    "status":{"enum":["draft","active","deprecated"]},
+    "description":{"type":"string"},
+    "related_skill_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "source_urls":{"type":"array","items":{"type":"string","format":"uri"},"uniqueItems":true}
+  }
+}
