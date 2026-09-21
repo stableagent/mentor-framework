@@ -1,0 +1,9 @@
+{
+  "taxonomy_version":"1.0.0",
+  "type":"session-role-registry",
+  "roles":[
+    {"id":"session-manager","name":"Session Manager","purpose":"Manages meeting lifecycle, agenda, focus, specialist proposals and participant approval workflow."},
+    {"id":"lead-advisor","name":"Lead Advisor","purpose":"Coordinates specialist analysis and synthesizes advisory conclusions."},
+    {"id":"session-secretary","name":"Session Secretary","purpose":"Maintains the structured meeting record and produces professional meeting documentation."}
+  ]
+}
