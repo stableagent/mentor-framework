@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meeting Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "timestamp"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "meeting-started",
+        "meeting-paused",
+        "meeting-resumed",
+        "participant-proposed",
+        "participant-approved",
+        "participant-declined",
+        "participant-removed",
+        "mentor-introduced",
+        "agenda-opened",
+        "agenda-completed",
+        "note-recorded",
+        "decision-recorded",
+        "action-created",
+        "risk-recorded",
+        "output-generated",
+        "meeting-closed",
+        "meeting-approved",
+        "meeting-amended"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "participant_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    }
+  }
+}
