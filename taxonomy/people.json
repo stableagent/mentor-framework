@@ -6,7 +6,7 @@
       "given_name": "سعید",
       "display_name": "سعید",
       "english_name": "Steeve",
-      "identity_type": "user",
+      "identity_type": "system-persona",
       "role_id": "session-manager",
       "specialty_ids": [],
       "fixed_duty": "مدیر جلسه؛ مالک کنترل جلسه، تأیید ورود متخصصان پیشنهادی و تصمیم‌های مدیریتی جلسه.",
@@ -14,7 +14,7 @@
         "given_name_only": true,
         "immutable_during_session": true
       },
-      "source": "runtime-user-identity"
+      "source": "system-defined"
     },
     {
       "id": "anahita",
