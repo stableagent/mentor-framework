@@ -1,24 +1,18 @@
 {
   "$schema":"https://json-schema.org/draft/2020-12/schema",
   "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/meeting.schema.json",
-  "title":"Mentor Advisory Meeting",
-  "type":"object",
-  "additionalProperties":false,
+  "title":"Mentor Advisory Meeting","type":"object","additionalProperties":false,
   "required":["id","type","status","title","participants","agenda","notes","decisions","actions","risks","open_questions","specialist_proposals","outputs","identity_policy"],
   "properties":{
-    "id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
-    "type":{"const":"advisory-meeting"},
-    "status":{"enum":["planned","active","paused","closed","approved","amended"]},
-    "title":{"type":"string"},
-    "participants":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","role_id","status","display_name","identity_source","specialty_ids","fixed_duty"],"properties":{"id":{"type":"string"},"role_id":{"type":"string"},"status":{"enum":["proposed","invited","accepted","declined","removed"]},"display_name":{"type":"string"},"identity_source":{"enum":["canonical-mentor-registry","registered-user-identity","system-persona"]},"specialty_ids":{"type":"array","items":{"type":"string"}},"fixed_duty":{"type":"string"},"user_id":{"type":["string","null"]},"english_name":{"type":["string","null"]}}}}},
+    "id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},"type":{"const":"advisory-meeting"},"status":{"enum":["planned","active","paused","closed","approved","amended"]},"title":{"type":"string"},
+    "participants":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","role_id","status","display_name","identity_source","specialty_ids","fixed_duty"],"properties":{"id":{"type":"string"},"role_id":{"type":"string"},"status":{"enum":["proposed","invited","accepted","declined","removed"]},"display_name":{"type":"string"},"identity_source":{"enum":["canonical-mentor-registry","registered-user-identity","system-persona"]},"specialty_ids":{"type":"array","items":{"type":"string"}},"fixed_duty":{"type":"string"},"user_id":{"type":["string","null"]},"english_name":{"type":["string","null"]}}}},
     "agenda":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","title","status"],"properties":{"id":{"type":"string"},"title":{"type":"string"},"status":{"enum":["open","in-progress","completed","deferred"]}}}},
     "notes":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","category","content"],"properties":{"id":{"type":"string"},"category":{"enum":["fact","claim","assumption","hypothesis","decision","action","risk","question","disagreement","evidence","commitment","parking-lot","note"]},"content":{"type":"string"},"speaker_id":{"type":["string","null"]},"agenda_item_id":{"type":["string","null"]},"source":{"type":["string","null"]}}}},
     "decisions":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","statement"],"properties":{"id":{"type":"string"},"statement":{"type":"string"},"owner_id":{"type":["string","null"]},"rationale":{"type":["string","null"]}}}},
     "actions":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","description"],"properties":{"id":{"type":"string"},"description":{"type":"string"},"owner_id":{"type":["string","null"]},"due_date":{"type":["string","null"]},"status":{"enum":["open","done","cancelled"]}}}},
     "risks":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","description"],"properties":{"id":{"type":"string"},"description":{"type":"string"},"severity":{"enum":["low","medium","high","critical"]}}}},
-    "open_questions":{"type":"array","items":{"type":"string"}},
-    "specialist_proposals":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["role_id","reason","status"],"properties":{"role_id":{"type":"string"},"reason":{"type":"string"},"status":{"enum":["proposed","accepted","declined","expired"]}}}},
-    "identity_policy":{"type":"object","additionalProperties":false,"required":["given_name_only","mentor_identity_locked","user_identity_source"],"properties":{"given_name_only":{"type":"boolean"},"mentor_identity_locked":{"type":"boolean"},"user_identity_source":{"const":"ai_registration_identity"}}},
+    "open_questions":{"type":"array","items":{"type":"string"}},"specialist_proposals":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["role_id","reason","status"],"properties":{"role_id":{"type":"string"},"reason":{"type":"string"},"status":{"enum":["proposed","accepted","declined","expired"]}}}},
+    "identity_policy":{"type":"object","additionalProperties":false,"required":["given_name_only","mentor_identity_locked","user_identity_source","fixed_session_manager_id"],"properties":{"given_name_only":{"type":"boolean"},"mentor_identity_locked":{"type":"boolean"},"user_identity_source":{"const":"ai_registration_identity"},"fixed_session_manager_id":{"const":"nahid"}}},
     "outputs":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["type","status"],"properties":{"type":{"enum":["executive-summary","minutes","decision-log","action-register","risk-register","assumption-register","question-register","disagreement-log","evidence-register","specialist-summary","follow-up-agenda","advisory-report"]},"status":{"enum":["draft","reviewed","approved","amended"]}}}}
   }
 }
