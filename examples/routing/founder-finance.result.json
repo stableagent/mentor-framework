@@ -1,0 +1,12 @@
+{
+  "request_id":"route-founder-finance-001","routing_status":"ready","lead_role":"lead-startup-advisor","lead_person_id":"mojgan",
+  "members":[{"role_id":"finance-mentor","person_id":"parmis","status":"approved","reason":"Financial modeling, cash flow and unit economics are explicit requirements."}],
+  "required_skills":["financial-modeling","cash-flow-management","unit-economics"],
+  "coverage":[
+    {"skill_id":"financial-modeling","status":"covered","covered_by_role_ids":["finance-mentor"]},
+    {"skill_id":"cash-flow-management","status":"covered","covered_by_role_ids":["finance-mentor"]},
+    {"skill_id":"unit-economics","status":"covered","covered_by_role_ids":["finance-mentor"]}
+  ],
+  "rationale":["Lead startup synthesis is provided by lead-startup-advisor; finance-mentor covers the required financial capabilities.","The registered finance mentor is explicitly pre-approved for this request."],
+  "missing_skills":[],"escalations":[],"approval":{"status":"pre-authorized","required":false},"taxonomy_version":"1.0.0","routing_rule_version":"1.0.0"
+}
