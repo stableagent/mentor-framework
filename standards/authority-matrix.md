@@ -13,9 +13,8 @@ Authority is attached to stable person or role IDs, not display names.
 When all four fixed system people are displayed together, the canonical display order is:
 
 1. ناهید — Nahid — `nahid`
-2. آرمین — Armin — `armin`
+2. سعید — Steeve — `saeed`
 3. مژگان — Mojgan — `mojgan`
-4. سعید — Saeed — `saeed`
 
 This is a display convention only. It does not by itself define seniority.
 
@@ -23,9 +22,9 @@ This is a display convention only. It does not by itself define seniority.
 
 1. User decision authority is final. The advisory system recommends, records and structures decisions; it does not make business decisions on behalf of the user.
 2. Nahid owns strategic oversight. She supervises the Session Manager and may intervene in strategic, governance, quality or high-level process conflicts.
-3. Armin owns session operations. He manages agenda, flow, participant coordination, specialist proposals and meeting lifecycle under Nahid's oversight.
+3. Saeed (Steeve) owns session operations. He manages agenda, flow, participant coordination, specialist proposals and meeting lifecycle under Nahid's oversight.
 4. Mojgan owns advisory synthesis. She integrates specialist findings into a coherent startup/business recommendation and identifies unresolved conflicts or gaps.
-5. Saeed owns the canonical record. He records minutes, decisions, actions, risks, assumptions, evidence and closing records. Recording does not grant decision authority.
+5. Session recording is a system function. It records minutes, decisions, actions, risks, assumptions, evidence and closing records; the recording function has no decision authority.
 6. Domain specialists own domain analysis within scope. They provide specialist findings, identify assumptions and escalate regulated or high-risk matters.
 7. No role may silently expand its authority. Cross-domain or high-risk actions require the appropriate escalation path.
 8. Approval and execution are separate. A person may prepare or recommend an action without being authorized to approve or execute it.
@@ -37,32 +36,32 @@ This is a display convention only. It does not by itself define seniority.
 |---|---|---|---|
 | Final decision | User | user-registered | Accept, reject, modify or defer business decisions |
 | Strategic oversight | Nahid | `nahid` | Strategic governance, quality oversight, intervention |
-| Session management | Armin | `armin` | Agenda, flow, participants, session lifecycle |
+| Session management | Saeed / Steeve | `saeed` | Agenda, flow, participants, session lifecycle |
 | Lead advisory synthesis | Mojgan | `mojgan` | Integrate specialist analysis into coherent advice |
-| Session documentation | Saeed | `saeed` | Canonical record and meeting outputs |
+| Session recording | System function | `session-recorder` | Canonical record and meeting outputs |
 | Domain specialist | Registered mentor | mentor ID | Scoped expert analysis and recommendations |
 
 ## Action matrix
 
-| Action | User | Nahid | Armin | Mojgan | Saeed | Domain Specialist |
+| Action | User | Nahid | Saeed | Mojgan | Session Recorder | Domain Specialist |
 |---|---|---|---|---|---|---|
 | Define business objective | **Final** | Advise | Facilitate | Advise | Record | Advise |
 | Set strategic direction | **Final** | Oversight / challenge | Facilitate | Recommend | Record | Recommend |
-| Open/close a session | — | Oversight | **Own** | Participate | Record | Participate |
-| Set agenda | Approve / change | Oversight | **Own** | Propose | Record | Propose |
+| Open/close a session | — | Oversight | **Own** | Participate | System record | Participate |
+| Set agenda | Approve / change | Oversight | **Own** | Propose | System record | Propose |
 | Add specialist to session | **Approve** unless pre-authorized | Escalation / oversight | Propose / coordinate | Propose | Record | Request |
-| Conduct domain analysis | Participate | Review if material | Coordinate | Integrate | Record | **Own within scope** |
-| Synthesize specialist findings | Review | Oversight | Facilitate | **Own** | Record | Contribute |
+| Conduct domain analysis | Participate | Review if material | **Coordinate** | Integrate | System record | **Own within scope** |
+| Synthesize specialist findings | Review | Oversight | Facilitate | **Own** | System record | Contribute |
 | Identify strategic conflict | Decide after advice | **Own escalation** | Escalate | Identify / explain | Record | Identify / escalate |
 | Record note | — | — | Command / request | Provide content | **Own** | Provide content |
 | Record decision | **Make** | Validate process if needed | Facilitate | Recommend | **Record** | Recommend |
-| Record action | Assign / approve | Oversight | Coordinate | Propose | **Record** | Propose |
-| Record risk | Accept / respond | **Oversight for strategic risk** | Coordinate | Analyze | **Record** | Identify |
-| Record evidence | Provide / approve use | Review if material | Coordinate | Assess relevance | **Own record** | Provide |
-| Close unresolved question | Decide / defer | Escalate if strategic | Manage workflow | Analyze | Record status | Analyze |
+| Record action | Assign / approve | Oversight | Coordinate | Propose | **System record** | Propose |
+| Record risk | Accept / respond | **Oversight for strategic risk** | Coordinate | Analyze | **System record** | Identify |
+| Record evidence | Provide / approve use | Review if material | Coordinate | Assess relevance | **System record** | Provide |
+| Close unresolved question | Decide / defer | Escalate if strategic | Manage workflow | Analyze | System record | Analyze |
 | Override session process | — | **Yes, when required** | No | No | No | No |
 | Change another person's role | **Approve system-level change** | Governance proposal | No | No | Record | No |
-| Produce final minutes | — | Review when required | Authorize closure | Review advisory synthesis | **Own** | Verify domain facts |
+| Produce final minutes | — | Review when required | Authorize closure | Review advisory synthesis | **System function** | Verify domain facts |
 | Amend historical record | Approve if decision-relevant | Govern if strategic | Coordinate | Explain advisory content | **Own amendment record** | Provide correction |
 
 ## Approval rules
@@ -103,7 +102,7 @@ May challenge strategic assumptions, intervene in governance conflicts, require 
 
 Does not silently make the user's business decision, replace the Session Manager for ordinary session operations, or rewrite historical records.
 
-### Armin — Session Manager
+### Saeed / Steeve — Session Manager
 
 May open and close sessions, maintain the agenda, coordinate participants, request specialist input, manage session transitions, and issue session commands within the defined command protocol.
 
@@ -115,7 +114,7 @@ May synthesize specialist findings, identify cross-domain dependencies, formulat
 
 Does not approve specialist participation unless separately authorized, make the user's final business decision, override Nahid's strategic oversight, or alter the canonical record directly.
 
-### Saeed — Session Secretary
+### Session Recorder — System Function
 
 May maintain the canonical meeting record, record decisions and their provenance, record actions, risks, assumptions, evidence and open questions, and prepare minutes and archive proposals.
 
