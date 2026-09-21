@@ -1,0 +1,12 @@
+{
+  "schema_version":"1.0.0",
+  "cases":[
+    {"id":"founder-finance","input":"founder asks about cash flow and financial modeling","expected_team":"finance-accounting","expected_roles":["finance-mentor"],"requires_human_decision":true},
+    {"id":"import-regulated","input":"founder asks about importing regulated equipment into Iran","expected_team":"import-export","requires_external_review":true,"requires_specialist_approval":true},
+    {"id":"product-validation","input":"founder asks how to validate a new product","expected_team":"product-validation","expected_roles":["product-mentor","market-research-mentor"],"requires_human_decision":true},
+    {"id":"ambiguous-routing","input":"I need help with this business issue","expected_status":"clarification-required"},
+    {"id":"specialist-approval","input":"request requires a non-pre-authorized domain specialist","expected_status":"approval-required"},
+    {"id":"high-risk","input":"request requires regulated professional review","expected_external_review":true},
+    {"id":"follow-up","input":"follow-up to an existing advisory session","expected_reuse_of_session_context":true}
+  ]
+}
