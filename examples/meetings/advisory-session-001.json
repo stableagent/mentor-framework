@@ -8,8 +8,8 @@
     "mentor_identity_locked": true,
     "user_identity_source": "ai_registration_identity",
     "fixed_strategic_oversight_id": "nahid",
-    "fixed_session_manager_id": "armin",
-    "fixed_session_secretary_id": "saeed",
+    "fixed_session_manager_id": "saeed",
+    "fixed_session_secretary_id": null,
     "fixed_lead_startup_advisor_id": "mojgan"
   },
   "participants": [
@@ -36,15 +36,15 @@
       "english_name": "Nahid"
     },
     {
-      "id": "armin",
+      "id": "saeed",
       "role_id": "session-manager",
       "status": "accepted",
-      "display_name": "آرمین",
+      "display_name": "سعید",
       "identity_source": "system-persona",
       "specialty_ids": [],
       "fixed_duty": "مدیر جلسه؛ مالک اجرای جلسه، دستور جلسه، کنترل جریان گفتگو، مدیریت ورود متخصصان و هماهنگی عملیاتی جلسه تحت نظارت راهبردی ناهید.",
       "user_id": null,
-      "english_name": "Armin"
+      "english_name": "Steeve"
     },
     {
       "id": "mojgan",
@@ -56,18 +56,18 @@
         "startup-strategy",
         "entrepreneurship-founder"
       ],
-      "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.",
+      "fixed_duty": "مشاور ارشد استارتاپ؛ هدایت مشاوره استارتاپی، جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.",
       "user_id": null,
       "english_name": "Mojgan"
     },
     {
-      "id": "saeed",
+      "id": "session-recorder",
       "role_id": "session-secretary",
       "status": "accepted",
-      "display_name": "سعید",
+      "display_name": "Session Recorder",
       "identity_source": "system-persona",
       "specialty_ids": [],
-      "fixed_duty": "منشی جلسه؛ ثبت و نگهداری صورت‌جلسه، تصمیم‌ها، اقدامات، ریسک‌ها، شواهد و خروجی‌های جلسه.",
+      "fixed_duty": "وظیفه سیستمی ثبت و نگهداری صورت‌جلسه، تصمیم‌ها، اقدامات، ریسک‌ها، شواهد و خروجی‌های جلسه.",
       "user_id": null,
       "english_name": "Saeed"
     }
