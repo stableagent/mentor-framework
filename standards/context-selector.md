@@ -197,7 +197,7 @@ At minimum, the context package should preserve:
 
 - final human decision authority
 - Nahid strategic oversight
-- Armin session management
+- Saeed session management
 - Mojgan advisory synthesis
 - Saeed session record responsibility
 - domain-scoped specialist authority
