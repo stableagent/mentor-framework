@@ -1,0 +1,27 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/mentor-team.schema.json",
+  "title":"Virtual Mentor Team",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","type","name","lead_role_id","member_role_ids","selection_context"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "type":{"const":"mentor-team"},
+    "name":{"type":"string"},
+    "lead_role_id":{"type":"string"},
+    "member_role_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "selection_context":{
+      "type":"object",
+      "additionalProperties":false,
+      "properties":{
+        "startup_type":{"type":"string"},
+        "startup_stage":{"type":"string"},
+        "user_role":{"type":"string"},
+        "problem_type":{"type":"string"},
+        "jurisdiction":{"type":"string"},
+        "risk_level":{"enum":["low","medium","high","critical"]}
+      }
+    }
+  }
+}
