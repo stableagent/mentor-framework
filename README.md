@@ -14,7 +14,7 @@
 
 ## Architecture
 
-```
+~~~
 mentor-framework/
 ├── taxonomy/          # domains, roles, skills, competencies and relationships
 ├── knowledge/         # frameworks, methodologies, metrics, models and playbooks
@@ -26,7 +26,7 @@ mentor-framework/
 ├── examples/          # implementation examples
 ├── metadata/          # project and maintainer metadata
 └── docs/              # architecture and usage documentation
-```
+~~~
 
 ## Core architectural principles
 
@@ -54,6 +54,42 @@ The current published TOON specification is v4.1 (2026-07-25), a stable working 
 See standards/format-and-token-efficiency.md.
 
 Markdown is used for human-facing documentation.
+
+## Context Packaging
+
+Mentor Framework uses progressive context selection so an AI consumer does not need the complete repository for every request.
+
+The preferred pipeline is:
+
+~~~
+User Request
+    ↓
+Problem Normalization
+    ↓
+Relevant Domains
+    ↓
+Required Skills
+    ↓
+Relevant Roles
+    ↓
+Relevant Mentor Teams
+    ↓
+Governance / Escalation
+    ↓
+Minimal Context Package
+    ↓
+TOON projection when beneficial
+    ↓
+AI reasoning
+~~~
+
+See:
+
+- standards/context-packaging.md
+- schemas/context-package.schema.json
+- guides/using-mentor-framework.md
+
+The guide contains provider-specific usage patterns for Gemini, DeepSeek, Perplexity, Grok, Claude, Qwen, Microsoft Copilot, ChatGPT and custom AI agents.
 
 ## Localization
 
@@ -89,6 +125,8 @@ See:
 - standards/chatbot-consumption-model.md
 - schemas/chatbot-consumption.schema.json
 - standards/format-and-token-efficiency.md
+- standards/context-packaging.md
+- guides/using-mentor-framework.md
 
 The same framework can therefore serve multiple chatbot providers without creating provider-specific versions of the framework.
 
