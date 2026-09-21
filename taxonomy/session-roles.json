@@ -14,7 +14,7 @@
       "id": "session-manager",
       "name": "Session Manager",
       "purpose": "Manages meeting lifecycle, agenda, focus, specialist proposals and participant approval workflow under strategic oversight.",
-      "fixed_person_id": "armin",
+      "fixed_person_id": "saeed",
       "reports_to": "strategic-oversight"
     },
     {
@@ -27,26 +27,26 @@
     {
       "id": "session-secretary",
       "name": "Session Secretary",
-      "purpose": "Maintains the structured meeting record, decisions, actions, risks, evidence and outputs.",
-      "fixed_person_id": "saeed"
+      "purpose": "Maintains the structured meeting record, decisions, actions, risks, evidence and outputs as a system recording function.",
+      "fixed_person_id": null,
+      "identity_type": "system-function"
     }
   ],
   "policies": {
     "strategic_oversight_identity_is_fixed": true,
     "strategic_oversight_person_id": "nahid",
     "session_manager_identity_is_fixed": true,
-    "session_manager_person_id": "armin",
-    "session_secretary_identity_is_fixed": true,
-    "session_secretary_person_id": "saeed",
+    "session_manager_person_id": "saeed",
+    "session_secretary_identity_is_fixed": false,
+    "session_secretary_person_id": null,
     "strategic_oversight_is_senior_to_session_manager": true,
     "system_persona_names_are_immutable": true,
     "lead_startup_advisor_fixed_identity": true,
     "lead_startup_advisor_person_id": "mojgan",
     "canonical_fixed_person_display_order": [
       "nahid",
-      "armin",
-      "mojgan",
-      "saeed"
+      "saeed",
+      "mojgan"
     ]
   }
 }
