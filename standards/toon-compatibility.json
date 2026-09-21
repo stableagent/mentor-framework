@@ -1,0 +1,11 @@
+{
+  "format":"TOON",
+  "role":"derived-llm-representation",
+  "canonical_source":"JSON",
+  "spec_version":"4.1",
+  "spec_status":"working-draft",
+  "media_type":"text/toon",
+  "encoding":"UTF-8",
+  "policy":"Generate TOON from canonical JSON; never maintain TOON as an independent source of truth.",
+  "fallback":"Use JSON when data is deeply nested, highly non-uniform, or when a consumer requires standard JSON interoperability."
+}
