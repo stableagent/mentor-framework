@@ -32,6 +32,8 @@ The names ناهید / Nahid, آرمین / Armin and سعید / Saeed are immuta
 
 Default mentor personas use Persian female given names. Mentors are referenced by given name only. No surname should be generated or appended unless an external human participant explicitly has one.
 
+The canonical lead startup advisor is Persian name مژگان, English name Mojgan, stable ID `anahita`, role `lead-startup-advisor`. The stable ID remains unchanged so historical references and persisted meeting records continue to resolve to the same mentor identity.
+
 ## 7. Fixed expertise and duty
 
 When a mentor appears anywhere in the meeting record, the system resolves the mentor ID against taxonomy/people.json. The model must not change a mentor's specialty, role, or duty because the topic changes.
