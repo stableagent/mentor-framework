@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://github.com/stableagent/mentor-skills/blob/main/schemas/mentor-team-selection.schema.json",
+  "title":"Mentor Team Selection",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["team_id","lead_role","members","required_skills","covered_skills","missing_skills","approval_status","rationale"],
+  "properties":{
+    "team_id":{"type":"string"},
+    "lead_role":{"type":"string"},
+    "lead_person_id":{"type":["string","null"]},
+    "members":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["role_id","person_id","reason"],"properties":{"role_id":{"type":"string"},"person_id":{"type":["string","null"]},"reason":{"type":"string"}}}},
+    "required_skills":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "covered_skills":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "missing_skills":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "escalations":{"type":"array","items":{"type":"string"}},
+    "approval_status":{"enum":["not-required","pending-user","approved","declined","pre-authorized"]},
+    "rationale":{"type":"array","items":{"type":"string"}},
+    "taxonomy_version":{"type":"string"}
+  }
+}
