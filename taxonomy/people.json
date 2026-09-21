@@ -22,10 +22,10 @@
       "given_name": "آرمین",
       "display_name": "آرمین",
       "english_name": "Armin",
-      "identity_type": "system-persona",
-      "role_id": "session-manager",
+      "identity_type": "mentor",
+      "role_id": "mentor",
       "specialty_ids": [],
-      "fixed_duty": "مدیر جلسه؛ مالک اجرای جلسه، دستور جلسه، کنترل جریان گفتگو، مدیریت ورود متخصصان و هماهنگی عملیاتی جلسه تحت نظارت راهبردی ناهید.",
+      "fixed_duty": "متخصص عمومی ثبت‌شده؛ نقش جلسه‌ای فقط در صورت تخصیص صریح و بدون جایگزینی هویت‌های ثابت.",
       "authority_level": "session-management",
       "name_policy": {
         "given_name_only": true,
@@ -37,11 +37,11 @@
       "id": "saeed",
       "given_name": "سعید",
       "display_name": "سعید",
-      "english_name": "Saeed",
+      "english_name": "Steeve",
       "identity_type": "system-persona",
-      "role_id": "session-secretary",
+      "role_id": "session-manager",
       "specialty_ids": [],
-      "fixed_duty": "منشی جلسه؛ ثبت و نگهداری صورت‌جلسه، تصمیم‌ها، اقدامات، ریسک‌ها، شواهد و خروجی‌های جلسه.",
+      "fixed_duty": "مدیر جلسه؛ مالک اجرای جلسه، دستور جلسه، کنترل جریان گفتگو، مدیریت ورود متخصصان و هماهنگی عملیاتی جلسه تحت نظارت راهبردی ناهید.",
       "authority_level": "session-documentation",
       "name_policy": {
         "given_name_only": true,
@@ -60,7 +60,7 @@
         "startup-strategy",
         "entrepreneurship-founder"
       ],
-      "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.",
+      "fixed_duty": "مشاور ارشد استارتاپ؛ هدایت مشاوره استارتاپی، جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.",
       "name_policy": {
         "given_name_only": true,
         "immutable_during_session": true
@@ -212,16 +212,15 @@
       "role_id": "strategic-oversight"
     },
     "session_manager_fixed_identity": {
-      "id": "armin",
-      "persian_name": "آرمین",
-      "english_name": "Armin",
-      "role_id": "session-manager"
-    },
-    "session_secretary_fixed_identity": {
       "id": "saeed",
       "persian_name": "سعید",
-      "english_name": "Saeed",
-      "role_id": "session-secretary"
+      "english_name": "Steeve",
+      "role_id": "session-manager"
+    },
+    "session_secretary": {
+      "type": "system-function",
+      "fixed_person_id": null,
+      "description": "ثبت و نگهداری رکورد جلسه به‌عنوان یک وظیفه سیستمی؛ این وظیفه دیگر به یک شخص ثابت نسبت داده نمی‌شود."
     },
     "strategic_oversight_is_senior_to_session_manager": true,
     "system_persona_names_are_immutable": true,
@@ -229,9 +228,8 @@
     "user_identity_must_not_be_inferred": true,
     "canonical_fixed_person_display_order": [
       "nahid",
-      "armin",
-      "mojgan",
-      "saeed"
+      "saeed",
+      "mojgan"
     ]
   }
 }
