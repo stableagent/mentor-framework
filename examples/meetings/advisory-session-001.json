@@ -3,10 +3,11 @@
   "type": "advisory-meeting",
   "status": "approved",
   "title": "نمونه جلسه مشاوره استارتاپ",
-  "identity_policy": {"given_name_only": true, "mentor_identity_locked": true, "user_identity_source": "ai_registration_identity", "fixed_session_manager_id": "nahid", "fixed_session_secretary_id": "saeed"},
+  "identity_policy": {"given_name_only": true, "mentor_identity_locked": true, "user_identity_source": "ai_registration_identity", "fixed_strategic_oversight_id": "nahid", "fixed_session_manager_id": "armin", "fixed_session_secretary_id": "saeed"},
   "participants": [
     {"id": "user-registered", "role_id": "founder-mentor", "status": "accepted", "display_name": "REGISTERED_USER", "identity_source": "registered-user-identity", "specialty_ids": [], "fixed_duty": "Founder / decision maker", "user_id": "runtime-user-id", "english_name": null},
-    {"id": "nahid", "role_id": "session-manager", "status": "accepted", "display_name": "ناهید", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "مدیر جلسه؛ مالک کنترل جلسه، تأیید ورود متخصصان پیشنهادی و تصمیم‌های مدیریتی جلسه.", "user_id": null, "english_name": "Nahid"},
+    {"id": "nahid", "role_id": "strategic-oversight", "status": "accepted", "display_name": "ناهید", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "نظارت راهبردی؛ مالک چارچوب راهبردی و کیفیت کلان فرایند مشاوره، ناظر ارشد مدیر جلسه و مرجع رسیدگی به انحرافات راهبردی و تعارض‌های سطح بالا.", "user_id": null, "english_name": "Nahid"},
+    {"id": "armin", "role_id": "session-manager", "status": "accepted", "display_name": "آرمین", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "مدیر جلسه؛ مالک اجرای جلسه، دستور جلسه، کنترل جریان گفتگو، مدیریت ورود متخصصان و هماهنگی عملیاتی جلسه تحت نظارت راهبردی ناهید.", "user_id": null, "english_name": "Armin"},
     {"id": "saeed", "role_id": "session-secretary", "status": "accepted", "display_name": "سعید", "identity_source": "system-persona", "specialty_ids": [], "fixed_duty": "منشی جلسه؛ ثبت و نگهداری صورت‌جلسه، تصمیم‌ها، اقدامات، ریسک‌ها، شواهد و خروجی‌های جلسه.", "user_id": null, "english_name": "Saeed"},
     {"id": "anahita", "role_id": "lead-startup-advisor", "status": "accepted", "display_name": "آناهیتا", "identity_source": "canonical-mentor-registry", "specialty_ids": ["startup-strategy","entrepreneurship-founder"], "fixed_duty": "مشاور ارشد و هماهنگ‌کننده؛ جمع‌بندی دیدگاه متخصصان و تبدیل آن به توصیه یکپارچه.", "user_id": null, "english_name": null}
   ],
