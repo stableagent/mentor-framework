@@ -42,6 +42,8 @@ Load, at minimum:
 - taxonomy/mentor-teams.json
 - taxonomy/specialty-matrix.json
 - taxonomy/people.json
+- taxonomy/advisory-roles.json
+- taxonomy/skills.json
 
 Additional domain-specific files may be loaded after request normalization.
 
