@@ -1,0 +1,776 @@
+{
+  "schema_version": "1.0.1",
+  "type": "skill-registry",
+  "skills": [
+    {
+      "id": "accounting-close",
+      "name": "Accounting Close",
+      "canonical": true
+    },
+    {
+      "id": "accounting-compliance",
+      "name": "Accounting Compliance",
+      "canonical": true
+    },
+    {
+      "id": "accounting-controls",
+      "name": "Accounting Controls",
+      "canonical": true
+    },
+    {
+      "id": "activation",
+      "name": "Activation",
+      "canonical": true
+    },
+    {
+      "id": "ai-governance",
+      "name": "Ai Governance",
+      "canonical": true
+    },
+    {
+      "id": "ai-readiness",
+      "name": "Ai Readiness",
+      "canonical": true
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics",
+      "canonical": true
+    },
+    {
+      "id": "audit-readiness",
+      "name": "Audit Readiness",
+      "canonical": true
+    },
+    {
+      "id": "banking-operations",
+      "name": "Banking Operations",
+      "canonical": true
+    },
+    {
+      "id": "bookkeeping-controls",
+      "name": "Bookkeeping Controls",
+      "canonical": true
+    },
+    {
+      "id": "brand-positioning",
+      "name": "Brand Positioning",
+      "canonical": true
+    },
+    {
+      "id": "business-continuity",
+      "name": "Business Continuity",
+      "canonical": true
+    },
+    {
+      "id": "business-law",
+      "name": "Business Law",
+      "canonical": true
+    },
+    {
+      "id": "business-model-design",
+      "name": "Business Model Design",
+      "canonical": true
+    },
+    {
+      "id": "business-protection",
+      "name": "Business Protection",
+      "canonical": true
+    },
+    {
+      "id": "campaign-planning",
+      "name": "Campaign Planning",
+      "canonical": true
+    },
+    {
+      "id": "cash-flow-management",
+      "name": "Cash Flow Management",
+      "canonical": true
+    },
+    {
+      "id": "channel-strategy",
+      "name": "Channel Strategy",
+      "canonical": true
+    },
+    {
+      "id": "commercial-contracts",
+      "name": "Commercial Contracts",
+      "canonical": true
+    },
+    {
+      "id": "communications",
+      "name": "Communications",
+      "canonical": true
+    },
+    {
+      "id": "company-law",
+      "name": "Company Law",
+      "canonical": true
+    },
+    {
+      "id": "competitive-positioning",
+      "name": "Competitive Positioning",
+      "canonical": true
+    },
+    {
+      "id": "competitor-research",
+      "name": "Competitor Research",
+      "canonical": true
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance",
+      "canonical": true
+    },
+    {
+      "id": "compliance-controls",
+      "name": "Compliance Controls",
+      "canonical": true
+    },
+    {
+      "id": "compliance-program",
+      "name": "Compliance Program",
+      "canonical": true
+    },
+    {
+      "id": "contract-risk",
+      "name": "Contract Risk",
+      "canonical": true
+    },
+    {
+      "id": "control-testing",
+      "name": "Control Testing",
+      "canonical": true
+    },
+    {
+      "id": "copyright",
+      "name": "Copyright",
+      "canonical": true
+    },
+    {
+      "id": "coverage-analysis",
+      "name": "Coverage Analysis",
+      "canonical": true
+    },
+    {
+      "id": "crisis-response",
+      "name": "Crisis Response",
+      "canonical": true
+    },
+    {
+      "id": "cross-border-compliance",
+      "name": "Cross Border Compliance",
+      "canonical": true
+    },
+    {
+      "id": "cross-border-contracts",
+      "name": "Cross Border Contracts",
+      "canonical": true
+    },
+    {
+      "id": "cross-border-risk",
+      "name": "Cross Border Risk",
+      "canonical": true
+    },
+    {
+      "id": "customer-acquisition",
+      "name": "Customer Acquisition",
+      "canonical": true
+    },
+    {
+      "id": "customer-discovery",
+      "name": "Customer Discovery",
+      "canonical": true
+    },
+    {
+      "id": "customer-experience",
+      "name": "Customer Experience",
+      "canonical": true
+    },
+    {
+      "id": "customer-interviews",
+      "name": "Customer Interviews",
+      "canonical": true
+    },
+    {
+      "id": "customer-segmentation",
+      "name": "Customer Segmentation",
+      "canonical": true
+    },
+    {
+      "id": "customs-documentation",
+      "name": "Customs Documentation",
+      "canonical": true
+    },
+    {
+      "id": "data-architecture",
+      "name": "Data Architecture",
+      "canonical": true
+    },
+    {
+      "id": "data-modeling",
+      "name": "Data Modeling",
+      "canonical": true
+    },
+    {
+      "id": "data-regulation",
+      "name": "Data Regulation",
+      "canonical": true
+    },
+    {
+      "id": "demand-planning",
+      "name": "Demand Planning",
+      "canonical": true
+    },
+    {
+      "id": "enterprise-sales",
+      "name": "Enterprise Sales",
+      "canonical": true
+    },
+    {
+      "id": "entrepreneurial-leadership",
+      "name": "Entrepreneurial Leadership",
+      "canonical": true
+    },
+    {
+      "id": "exit-strategy",
+      "name": "Exit Strategy",
+      "canonical": true
+    },
+    {
+      "id": "export-documentation",
+      "name": "Export Documentation",
+      "canonical": true
+    },
+    {
+      "id": "export-procedure",
+      "name": "Export Procedure",
+      "canonical": true
+    },
+    {
+      "id": "financial-modeling",
+      "name": "Financial Modeling",
+      "canonical": true
+    },
+    {
+      "id": "financial-products",
+      "name": "Financial Products",
+      "canonical": true
+    },
+    {
+      "id": "financial-regulation",
+      "name": "Financial Regulation",
+      "canonical": true
+    },
+    {
+      "id": "financial-reporting",
+      "name": "Financial Reporting",
+      "canonical": true
+    },
+    {
+      "id": "fintech-architecture",
+      "name": "Fintech Architecture",
+      "canonical": true
+    },
+    {
+      "id": "fintech-risk",
+      "name": "Fintech Risk",
+      "canonical": true
+    },
+    {
+      "id": "founder-decision-making",
+      "name": "Founder Decision Making",
+      "canonical": true
+    },
+    {
+      "id": "founder-goal-setting",
+      "name": "Founder Goal Setting",
+      "canonical": true
+    },
+    {
+      "id": "freight-planning",
+      "name": "Freight Planning",
+      "canonical": true
+    },
+    {
+      "id": "fundraising-strategy",
+      "name": "Fundraising Strategy",
+      "canonical": true
+    },
+    {
+      "id": "go-to-market",
+      "name": "Go To Market",
+      "canonical": true
+    },
+    {
+      "id": "growth-experiments",
+      "name": "Growth Experiments",
+      "canonical": true
+    },
+    {
+      "id": "hiring",
+      "name": "Hiring",
+      "canonical": true
+    },
+    {
+      "id": "hypothesis-testing",
+      "name": "Hypothesis Testing",
+      "canonical": true
+    },
+    {
+      "id": "import-procedure",
+      "name": "Import Procedure",
+      "canonical": true
+    },
+    {
+      "id": "incident-readiness",
+      "name": "Incident Readiness",
+      "canonical": true
+    },
+    {
+      "id": "incoterms",
+      "name": "Incoterms",
+      "canonical": true
+    },
+    {
+      "id": "insurance-risk",
+      "name": "Insurance Risk",
+      "canonical": true
+    },
+    {
+      "id": "intellectual-property",
+      "name": "Intellectual Property",
+      "canonical": true
+    },
+    {
+      "id": "internal-controls",
+      "name": "Internal Controls",
+      "canonical": true
+    },
+    {
+      "id": "international-business",
+      "name": "International Business",
+      "canonical": true
+    },
+    {
+      "id": "international-compliance",
+      "name": "International Compliance",
+      "canonical": true
+    },
+    {
+      "id": "international-operations",
+      "name": "International Operations",
+      "canonical": true
+    },
+    {
+      "id": "international-sales",
+      "name": "International Sales",
+      "canonical": true
+    },
+    {
+      "id": "international-trade",
+      "name": "International Trade",
+      "canonical": true
+    },
+    {
+      "id": "inventory-control",
+      "name": "Inventory Control",
+      "canonical": true
+    },
+    {
+      "id": "investment-terms",
+      "name": "Investment Terms",
+      "canonical": true
+    },
+    {
+      "id": "investor-readiness",
+      "name": "Investor Readiness",
+      "canonical": true
+    },
+    {
+      "id": "ip-strategy",
+      "name": "Ip Strategy",
+      "canonical": true
+    },
+    {
+      "id": "iran-tax-compliance",
+      "name": "Iran Tax Compliance",
+      "canonical": true
+    },
+    {
+      "id": "jurisdiction-analysis",
+      "name": "Jurisdiction Analysis",
+      "canonical": true
+    },
+    {
+      "id": "landed-cost",
+      "name": "Landed Cost",
+      "canonical": true
+    },
+    {
+      "id": "legal-risk",
+      "name": "Legal Risk",
+      "canonical": true
+    },
+    {
+      "id": "letters-of-credit",
+      "name": "Letters Of Credit",
+      "canonical": true
+    },
+    {
+      "id": "localization",
+      "name": "Localization",
+      "canonical": true
+    },
+    {
+      "id": "logistics",
+      "name": "Logistics",
+      "canonical": true
+    },
+    {
+      "id": "logistics-cost",
+      "name": "Logistics Cost",
+      "canonical": true
+    },
+    {
+      "id": "ma-readiness",
+      "name": "Ma Readiness",
+      "canonical": true
+    },
+    {
+      "id": "market-entry",
+      "name": "Market Entry",
+      "canonical": true
+    },
+    {
+      "id": "market-research",
+      "name": "Market Research",
+      "canonical": true
+    },
+    {
+      "id": "market-sizing",
+      "name": "Market Sizing",
+      "canonical": true
+    },
+    {
+      "id": "metrics-design",
+      "name": "Metrics Design",
+      "canonical": true
+    },
+    {
+      "id": "model-selection",
+      "name": "Model Selection",
+      "canonical": true
+    },
+    {
+      "id": "operating-model",
+      "name": "Operating Model",
+      "canonical": true
+    },
+    {
+      "id": "operations-design",
+      "name": "Operations Design",
+      "canonical": true
+    },
+    {
+      "id": "operations-kpis",
+      "name": "Operations Kpis",
+      "canonical": true
+    },
+    {
+      "id": "organizational-design",
+      "name": "Organizational Design",
+      "canonical": true
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "canonical": true
+    },
+    {
+      "id": "payments-law",
+      "name": "Payments Law",
+      "canonical": true
+    },
+    {
+      "id": "performance-management",
+      "name": "Performance Management",
+      "canonical": true
+    },
+    {
+      "id": "pipeline-management",
+      "name": "Pipeline Management",
+      "canonical": true
+    },
+    {
+      "id": "pivot-design",
+      "name": "Pivot Design",
+      "canonical": true
+    },
+    {
+      "id": "positioning",
+      "name": "Positioning",
+      "canonical": true
+    },
+    {
+      "id": "prioritization",
+      "name": "Prioritization",
+      "canonical": true
+    },
+    {
+      "id": "problem-definition",
+      "name": "Problem Definition",
+      "canonical": true
+    },
+    {
+      "id": "problem-validation",
+      "name": "Problem Validation",
+      "canonical": true
+    },
+    {
+      "id": "process-design",
+      "name": "Process Design",
+      "canonical": true
+    },
+    {
+      "id": "procurement",
+      "name": "Procurement",
+      "canonical": true
+    },
+    {
+      "id": "procurement-controls",
+      "name": "Procurement Controls",
+      "canonical": true
+    },
+    {
+      "id": "product-discovery",
+      "name": "Product Discovery",
+      "canonical": true
+    },
+    {
+      "id": "product-prioritization",
+      "name": "Product Prioritization",
+      "canonical": true
+    },
+    {
+      "id": "public-relations",
+      "name": "Public Relations",
+      "canonical": true
+    },
+    {
+      "id": "purchasing-process",
+      "name": "Purchasing Process",
+      "canonical": true
+    },
+    {
+      "id": "regulatory-mapping",
+      "name": "Regulatory Mapping",
+      "canonical": true
+    },
+    {
+      "id": "regulatory-reporting",
+      "name": "Regulatory Reporting",
+      "canonical": true
+    },
+    {
+      "id": "reorder-policy",
+      "name": "Reorder Policy",
+      "canonical": true
+    },
+    {
+      "id": "retention",
+      "name": "Retention",
+      "canonical": true
+    },
+    {
+      "id": "revenue-model",
+      "name": "Revenue Model",
+      "canonical": true
+    },
+    {
+      "id": "risk-identification",
+      "name": "Risk Identification",
+      "canonical": true
+    },
+    {
+      "id": "risk-register",
+      "name": "Risk Register",
+      "canonical": true
+    },
+    {
+      "id": "roadmapping",
+      "name": "Roadmapping",
+      "canonical": true
+    },
+    {
+      "id": "sales-process",
+      "name": "Sales Process",
+      "canonical": true
+    },
+    {
+      "id": "scenario-analysis",
+      "name": "Scenario Analysis",
+      "canonical": true
+    },
+    {
+      "id": "security-baseline",
+      "name": "Security Baseline",
+      "canonical": true
+    },
+    {
+      "id": "service-design",
+      "name": "Service Design",
+      "canonical": true
+    },
+    {
+      "id": "startup-strategy",
+      "name": "Startup Strategy",
+      "canonical": true
+    },
+    {
+      "id": "stock-accuracy",
+      "name": "Stock Accuracy",
+      "canonical": true
+    },
+    {
+      "id": "stock-control",
+      "name": "Stock Control",
+      "canonical": true
+    },
+    {
+      "id": "strategic-prioritization",
+      "name": "Strategic Prioritization",
+      "canonical": true
+    },
+    {
+      "id": "strategy-design",
+      "name": "Strategy Design",
+      "canonical": true
+    },
+    {
+      "id": "supplier-risk",
+      "name": "Supplier Risk",
+      "canonical": true
+    },
+    {
+      "id": "supplier-selection",
+      "name": "Supplier Selection",
+      "canonical": true
+    },
+    {
+      "id": "supply-chain-planning",
+      "name": "Supply Chain Planning",
+      "canonical": true
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "canonical": true
+    },
+    {
+      "id": "tax-compliance",
+      "name": "Tax Compliance",
+      "canonical": true
+    },
+    {
+      "id": "tax-documentation",
+      "name": "Tax Documentation",
+      "canonical": true
+    },
+    {
+      "id": "tax-risk-identification",
+      "name": "Tax Risk Identification",
+      "canonical": true
+    },
+    {
+      "id": "technical-roadmap",
+      "name": "Technical Roadmap",
+      "canonical": true
+    },
+    {
+      "id": "technology-architecture",
+      "name": "Technology Architecture",
+      "canonical": true
+    },
+    {
+      "id": "threat-modeling",
+      "name": "Threat Modeling",
+      "canonical": true
+    },
+    {
+      "id": "trade-compliance",
+      "name": "Trade Compliance",
+      "canonical": true
+    },
+    {
+      "id": "trade-finance",
+      "name": "Trade Finance",
+      "canonical": true
+    },
+    {
+      "id": "trade-finance-risk",
+      "name": "Trade Finance Risk",
+      "canonical": true
+    },
+    {
+      "id": "trade-payment",
+      "name": "Trade Payment",
+      "canonical": true
+    },
+    {
+      "id": "trademark",
+      "name": "Trademark",
+      "canonical": true
+    },
+    {
+      "id": "transaction-risk",
+      "name": "Transaction Risk",
+      "canonical": true
+    },
+    {
+      "id": "transport-management",
+      "name": "Transport Management",
+      "canonical": true
+    },
+    {
+      "id": "turnaround",
+      "name": "Turnaround",
+      "canonical": true
+    },
+    {
+      "id": "unit-economics",
+      "name": "Unit Economics",
+      "canonical": true
+    },
+    {
+      "id": "ux-research",
+      "name": "Ux Research",
+      "canonical": true
+    },
+    {
+      "id": "valuation",
+      "name": "Valuation",
+      "canonical": true
+    },
+    {
+      "id": "value-proposition-testing",
+      "name": "Value Proposition Testing",
+      "canonical": true
+    },
+    {
+      "id": "warehouse-design",
+      "name": "Warehouse Design",
+      "canonical": true
+    },
+    {
+      "id": "warehouse-kpis",
+      "name": "Warehouse Kpis",
+      "canonical": true
+    },
+    {
+      "id": "warehouse-management",
+      "name": "Warehouse Management",
+      "canonical": true
+    }
+  ]
+}
