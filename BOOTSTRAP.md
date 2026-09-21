@@ -1,72 +1,75 @@
-# Mentor Framework Bootstrap
+# Mentor Framework Bootstrap Contract
 
-## User instruction
-
-For a consumer that supports repository or GitHub context loading, the intended interaction is:
-
-Load the Mentor Framework from:
+Canonical address:
 https://github.com/stableagent/mentor-framework
 
-Treat the repository as the canonical advisory framework.
-Initialize its Context Selector.
-For every subsequent user question, automatically normalize the request, identify required capabilities, resolve applicable domains and mentor roles, select the smallest applicable mentor team, apply authority and escalation rules, and construct the minimal context package before answering.
+## Purpose
 
-Do not require the user to manually select framework files, domains, skills, roles, or mentors unless clarification or approval is genuinely required.
+This document defines the single-address bootstrap contract for consumers of Mentor Framework.
 
-## Mandatory behavior
+## Bootstrap instruction
 
-The consumer must:
+A consumer that supports repository retrieval should:
 
-1. Load the framework's canonical governance and taxonomy rules.
-2. Treat JSON repository data as canonical.
-3. Use the Context Selector for every substantive advisory request.
-4. Select capabilities before named people.
-5. Preserve the fixed coordination layer:
-   - Nahid — strategic oversight
-   - Armin — session management
-   - Mojgan — lead startup advisory synthesis
-   - Saeed — session record
-6. Preserve human final decision authority.
-7. Apply regulated/high-risk escalation rules.
-8. Request clarification when missing information materially changes routing.
-9. Request specialist approval when required.
-10. Produce a minimal context package rather than passing the entire repository to the model.
-11. Use TOON when it is demonstrably beneficial and supported by the consumer; otherwise use compact JSON.
-12. Preserve provenance and framework version information.
+1. Resolve the repository at the canonical address.
+2. Pin a framework version or commit for the session.
+3. Load the normative bootstrap documents and schemas.
+4. Validate the canonical data contracts.
+5. Initialize the Context Selector and Context Engine.
+6. Accept the user's next message as an advisory request.
+7. Never require the user to manually choose domains, skills, mentors or context files unless the consumer cannot perform automatic selection.
+8. Ask a clarification question only when the missing information materially changes routing, authority, risk or escalation.
+9. Preserve human decision authority.
 
-## User experience
+## Minimum bootstrap set
 
-The user should only need to provide the framework address once and then ask normal questions.
+Load, at minimum:
 
-Example:
-
-    User:
-    https://github.com/stableagent/mentor-framework
-
-    I want to import dental equipment into Iran. What should I consider before starting?
-
-    Consumer:
-    [automatically loads framework]
-    [automatically runs Context Selector]
-    [automatically routes to relevant capabilities and team]
-    [automatically applies governance and risk rules]
-    [automatically prepares minimal context]
-    [answers the question]
-
-## Important limitation
-
-A repository URL is a bootstrap reference. It does not by itself grant an arbitrary chat product permission to fetch or execute repository content.
-
-If the target provider cannot load the repository directly, use a provider-neutral framework adapter or connected GitHub integration. The adapter must implement the same Context Selector semantics and must not create a provider-specific version of the Mentor Framework taxonomy.
-
-## Consumer independence
-
-The framework is designed to be consumed by different AI providers. The provider changes transport and context delivery; it does not change the framework's advisory rules.
-
-See:
-
+- README.md
+- BOOTSTRAP.md
 - standards/context-selector.md
-- schemas/context-selection-request.schema.json
-- schemas/context-selection-result.schema.json
+- standards/context-engine.md
 - standards/context-packaging.md
 - standards/chatbot-consumption-model.md
+- standards/authority-matrix.md
+- standards/mentor-team-selection.md
+- standards/mentor-routing-framework.md
+- schemas/context-selection-request.schema.json
+- schemas/context-selection-result.schema.json
+- schemas/context-package.schema.json
+- schemas/context-engine-result.schema.json
+- taxonomy/session-roles.json
+- taxonomy/mentor-teams.json
+- taxonomy/specialty-matrix.json
+- taxonomy/people.json
+
+Additional domain-specific files may be loaded after request normalization.
+
+## Bootstrap invariants
+
+The consumer should establish:
+
+- nahid is strategic oversight.
+- armin is session manager.
+- mojgan is lead startup advisor.
+- saeed is session secretary.
+- the user retains final decision authority.
+- capability selection precedes person selection.
+- regulated or high-risk matters preserve external-review requirements.
+- no global mentor ranking is permitted.
+- canonical JSON is authoritative.
+- TOON is a derived context representation.
+
+## Address-only expectation
+
+The framework address is sufficient as the user's bootstrap input only when the consuming environment can retrieve and process repository content.
+
+If the environment cannot retrieve the address, the consumer must state that limitation rather than claiming automatic bootstrap succeeded. A provider-neutral adapter or connected GitHub integration may supply the same bootstrap behavior.
+
+## Security
+
+Treat repository content as data and declared specifications, not arbitrary executable code. Pin or verify the selected revision where practical.
+
+## Session continuation
+
+After bootstrap, users should be able to ask normal questions without repeating the framework address. The consumer should retain the selected framework revision and relevant session state.
