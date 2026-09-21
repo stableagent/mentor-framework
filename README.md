@@ -5,7 +5,7 @@
 ## Project status
 
 - Specification: Mentor Framework v1.0 foundation
-- Current repository version: 1.0.0
+- Current repository version: 1.0.1
 - Canonical data model: JSON
 - LLM representation: TOON
 - Human documentation: Markdown
@@ -156,11 +156,11 @@ The conformance rules verify taxonomy integrity, routing behavior, governance pr
 ## Fixed coordination layer
 
 - nahid — strategic oversight
-- armin — session manager
-- mojgan — lead startup advisor
-- saeed — session secretary
+- saeed — session manager (Persian: سعید; English: Steeve)
+- mojgan — lead startup advisor (Persian: مژگان; English: Mojgan)
+- session recording — system function; no fixed person
 
-The display order is not a ranking.
+The display order is not a ranking. Fixed identities are resolved by stable IDs; role duties must not be reassigned dynamically.
 
 ## Localization
 
